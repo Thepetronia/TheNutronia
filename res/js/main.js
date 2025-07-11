@@ -1,15 +1,12 @@
+let coll = document.getElementsByClassName("faq-q-box");
+let cont = document.getElementsByClassName("faq-a-box");
 
-/*let coll = document.getElementsByClassName("collapse")
-
-for (let i = 1; i < coll.length; i++){
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.display === "block"){
-            content.style.display = "none";
-        }
-        else {
-            content.style.display = "block";
-        }
-    })
-}*/
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    if (cont[i].style.display === "block") {
+      cont[i].style.display = "none";
+    } else {
+      cont[i].style.display = "block";
+    }
+  });
+}

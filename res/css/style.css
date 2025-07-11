@@ -75,9 +75,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-color: rgb(101, 137, 255);
+  background-color: rgb(145, 145, 145);
   justify-content: center;
   gap: 10px 30px;
+  font-size: 18px;
 
   position: sticky;
   top: 0;
@@ -85,7 +86,7 @@ header {
 .nav-box {
   padding: 20px;
   color: white;
-  background-color: coral;
+  /*background-color: coral;*/
 }
 /**/
 
@@ -97,19 +98,19 @@ header {
 
 .main-page {
   width: 100%;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 /*Sections*/
-#about {
+/*#about {
   background-color: gold;
-}
+}*/
 #faq {
-  background-color: rgb(199, 39, 73);
+  background-color: rgb(240, 240, 240);
 }
-#connect {
+/*#connect {
   background-color: rgb(17, 185, 73);
-}
+}*/
 
 #about,
 #faq,
@@ -123,8 +124,10 @@ header {
   padding: 60px 0px 30px 0px;
 }
 
-.section-title{
-  padding: 20px 0px 20px 0px;
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0px 50px 0px;
 }
 
 .section-content {
@@ -133,7 +136,7 @@ header {
   width: 60%;
 }
 
-.section-container{
+.section-container {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -141,12 +144,16 @@ header {
   align-items: stretch;
   align-content: center;
 }
+/**/
 
-.about-box-big, .about-box-medium, .about-box-small{
-  border: 1px solid rgb(198, 198, 198);
+/* About section*/
+.about-box-big,
+.about-box-medium,
+.about-box-small {
+  border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(210, 210, 210);
 
   display: flex;
   flex-wrap: wrap;
@@ -154,20 +161,23 @@ header {
   min-height: 100px;
 }
 
-.about-box-big{
+.about-box-big {
   width: 100%;
   min-width: 250px;
 }
-.about-box-medium{
+.about-box-medium {
   width: 45%;
   min-width: 150px;
 }
-.about-box-small{
+.about-box-small {
   width: 20%;
   min-width: 75px;
 }
 
-.faq-box{
+/**/
+
+/* FAQ section */
+.faq-q-box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -177,10 +187,45 @@ header {
   border-radius: 5px;
   padding: 20px;
   font-size: 14px;
+  transition: .3s;
 }
 
-.faq-box:hover{
-  background-color: rgb(140, 140, 140);
+.faq-q-box:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.faq-a-box {
+  display: none;
+  overflow: hidden;
+}
+
+/**/
+
+/*Connection section*/
+
+.connect-box{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(180, 180, 180);
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: .3s;
+  color: black;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.connect-box:hover{
+  background-color: rgb(200, 200, 200);
+}
+
+.connect-box-img{
+  width: 80%;
+  height: auto;
 }
 
 /**/
@@ -194,9 +239,9 @@ a:link {
   text-decoration: none;
 }
 
-
 footer {
-  background-color: rgb(210, 210, 210);
+  background-color: rgb(100, 100, 100);
+  color: white;
 
   display: flex;
   flex-wrap: wrap;
@@ -204,20 +249,13 @@ footer {
   padding: 50px;
 }
 
-.footer-container{
+.footer-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
+  gap: 20px;
 }
-
-
-/*.collapse-content{
-  display: none;
-  overflow: hidden;
-}*/
-
 
 /**/
 

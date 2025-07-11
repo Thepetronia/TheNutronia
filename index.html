@@ -60,7 +60,38 @@
               <h2>About</h2>
             </div>
             <div class="about-container section-container">
-              <div class="about-box-big">This is big version of box</div>
+              <div class="about-box-big">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="f589cd3f-b392-4336-b7e3-90149807827d"
+                  />
+                  <input
+                    placeholder="Your name"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <input
+                    placeholder="Your email"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                  <textarea
+                    placeholder="Your message"
+                    name="message"
+                    required
+                  ></textarea>
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                  />
+                  <button type="submit">Submit Form</button>
+                </form>
+              </div>
               <div class="about-box-medium">This is medium version of box</div>
               <div class="about-box-medium">This is medium version of box</div>
               <div class="about-box-big">This is big version of box</div>
@@ -76,16 +107,14 @@
               <h2>FAQ</h2>
             </div>
             <div class="faq-container section-container">
-              There will be FAQ
-              <!--<button type="button" class="collapse">What are we ?</button>
-              <div class="collapse-content">
-                <p>
-                  We are TheNutronia
-                </p>
-              </div>-->
-              <button class="faq-box">What are we offering ?</button>
-              <button class="faq-box">What will be the result ?</button>
-              <button class="faq-box">Why are we so good ?</button>
+              <button class="faq-q-box">What are we offering ?</button>
+              <div class="faq-a-box">Great life style</div>
+              <button class="faq-q-box">What will be the result ?</button>
+              <div class="faq-a-box">New life style for you</div>
+              <button class="faq-q-box">Why are we so good ?</button>
+              <div class="faq-a-box">Because we have experiences</div>
+              <button class="faq-q-box">Why are we so good ?</button>
+              <div class="faq-a-box">Because we have experiences</div>
             </div>
           </div>
         </div>
@@ -95,8 +124,55 @@
               <h2>Connect</h2>
             </div>
             <div class="connect-container section-container">
-              There will be boxes and in each box will be information of
-              connection
+              <a
+                target="_blank"
+                href="https://www.instagram.com/thenutronia/?igshid=YmMyMTA2M2Y%3D"
+              >
+                <div class="connect-box">
+                  <h3>Instagram</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/instagramc.png"
+                    alt="logo of instagram"
+                  />
+                </div>
+              </a>
+              <a target="_blank" href="https://twitter.com/TheNutronia">
+                <div class="connect-box">
+                  <h3>Twitter</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/twitterc.png"
+                    alt="logo of twitter"
+                  />
+                </div>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/people/Nutronia/100088896672187/?mibextid=LQQJ4d"
+              >
+                <div class="connect-box">
+                  <h3>Facebook</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/facebookc.png"
+                    alt="logo of facebook"
+                  />
+                </div>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@thenutronia?_t=8XegnbBLFjy&_r=1"
+              >
+                <div class="connect-box">
+                  <h3>TikTok</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/tiktokc.png"
+                    alt="logo of facebook"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -112,7 +188,6 @@
             <p>heavy</p>
             <p>development</p>
           </div>
-          <hr />
           <div class="footer-box">
             <h3>Development</h3>
             <p>This</p>
@@ -125,5 +200,6 @@
         </div>
       </footer>
     </div>
+    <script src="./res/js/main.js"></script>
   </body>
 </html>
