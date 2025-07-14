@@ -7,36 +7,43 @@
     <link rel="stylesheet" href="./res/css/style.css" />
     <link
       rel="shortcut icon"
-      href="./res/img/favicon.ico"
+      href="./res/img/small_page/favicon.ico"
       type="image/x-icon"
     />
   </head>
   <body>
     <div class="main-container">
       <header>
-        <!--<div class="header-title">
-          <div class="header-text">
-            <a href="index.html">
-              <h1>
-                <span class="header-small-text"> the </span>
-                Nutronia
-              </h1>
-            </a>
-          </div>
-        </div>-->
-        <div class="header-images">
-          <div class="header-title">
-            <div class="header-text">
-              <a href="index.html">
-                <h1>
-                  <span class="header-small-text"> the </span>
-                  Nutronia
-                </h1>
-              </a>
+        <div class="header-images-container">
+          <div class="header-img-shadow">
+            <div class="header-title">
+              <div class="header-text">
+                <a href="index.html">
+                  <h1>
+                    <span class="header-small-text"> the </span>
+                    Nutronia
+                  </h1>
+                </a>
+              </div>
             </div>
           </div>
+          <img
+            class="header-img header-img-first"
+            src="./res/img/picture1.jpg"
+            alt="first image"
+          />
+          <img
+            class="header-img"
+            src="./res/img/picture2.jpg"
+            alt="first image"
+          />
+          <img
+            class="header-img"
+            src="./res/img/picture3.jpg"
+            alt="first image"
+          />
           <div class="nav-imgs-container">
-            <a class="nav-img-button"></a>
+            <a class="nav-img-button nav-img-button-first"></a>
             <a class="nav-img-button"></a>
             <a class="nav-img-button"></a>
           </div>
@@ -49,49 +56,21 @@
         <a href="#faq">
           <div class="nav-box">FAQ</div>
         </a>
-        <a href="#connect">
+        <!--<a href="#connect">
           <div class="nav-box">Connect</div>
+        </a>-->
+        <a href="#review">
+          <div class="nav-box">Reviews</div>
         </a>
       </nav>
       <div class="main-body-container">
-        <div id="about">
+        <div id="about" class="section">
           <div class="section-content">
             <div class="about-title section-title">
               <h2>About</h2>
             </div>
             <div class="about-container section-container">
-              <div class="about-box-big">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <input
-                    type="hidden"
-                    name="access_key"
-                    value="f589cd3f-b392-4336-b7e3-90149807827d"
-                  />
-                  <input
-                    placeholder="Your name"
-                    type="text"
-                    name="name"
-                    required
-                  />
-                  <input
-                    placeholder="Your email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                  <textarea
-                    placeholder="Your message"
-                    name="message"
-                    required
-                  ></textarea>
-                  <input
-                    type="hidden"
-                    name="redirect"
-                    value="https://web3forms.com/success"
-                  />
-                  <button type="submit">Submit Form</button>
-                </form>
-              </div>
+              <div class="about-box-big">This is big version of box</div>
               <div class="about-box-medium">This is medium version of box</div>
               <div class="about-box-medium">This is medium version of box</div>
               <div class="about-box-big">This is big version of box</div>
@@ -101,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div id="faq">
+        <div id="faq" class="section">
           <div class="section-content">
             <div class="faq-title section-title">
               <h2>FAQ</h2>
@@ -118,12 +97,11 @@
             </div>
           </div>
         </div>
-        <div id="connect">
+        <!--<div id="connect">
           <div class="section-content">
             <div class="connect-title section-title">
               <h2>Connect</h2>
-            </div>
-            <div class="connect-container section-container">
+              <div class="connect-container section-container">
               <a
                 target="_blank"
                 href="https://www.instagram.com/thenutronia/?igshid=YmMyMTA2M2Y%3D"
@@ -134,29 +112,6 @@
                     class="connect-box-img"
                     src="./res/img/contacts/instagramc.png"
                     alt="logo of instagram"
-                  />
-                </div>
-              </a>
-              <a target="_blank" href="https://twitter.com/TheNutronia">
-                <div class="connect-box">
-                  <h3>Twitter</h3>
-                  <img
-                    class="connect-box-img"
-                    src="./res/img/contacts/twitterc.png"
-                    alt="logo of twitter"
-                  />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/people/Nutronia/100088896672187/?mibextid=LQQJ4d"
-              >
-                <div class="connect-box">
-                  <h3>Facebook</h3>
-                  <img
-                    class="connect-box-img"
-                    src="./res/img/contacts/facebookc.png"
-                    alt="logo of facebook"
                   />
                 </div>
               </a>
@@ -173,6 +128,107 @@
                   />
                 </div>
               </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/people/Nutronia/100088896672187/?mibextid=LQQJ4d"
+              >
+                <div class="connect-box">
+                  <h3>Facebook</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/facebookc.png"
+                    alt="logo of facebook"
+                  />
+                </div>
+              </a>
+              <a target="_blank" href="https://twitter.com/TheNutronia">
+                <div class="connect-box">
+                  <h3>Twitter</h3>
+                  <img
+                    class="connect-box-img"
+                    src="./res/img/contacts/twitterc.png"
+                    alt="logo of twitter"
+                  />
+                </div>
+              </a>
+            </div>
+            </div>
+          </div>
+        </div>-->
+        <div id="review" class="section">
+          <div class="section-content">
+            <div class="review-title section-title">
+              <h2>Reviews</h2>
+            </div>
+            <div class="review-container section-container">
+              <div class="review-box">
+                <div class="review-author">
+                  Eduard Francimoro
+                </div>
+                <div class="review-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Aenean fermentum risus id
+                  tortor. Aliquam erat volutpat. Duis bibendum, lectus ut
+                  viverra rhoncus, dolor nunc faucibus libero, eget facilisis
+                  enim ipsum id lacus. Sed convallis magna eu sem. Aenean vel
+                  massa quis mauris vehicula lacinia. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Fusce tellus. Vivamus luctus egestas leo.
+                  Praesent dapibus. Etiam commodo dui eget wisi.
+                </div>
+              </div>
+              <div class="review-box">
+                <div class="review-author">
+                  Eduard Francimoro
+                </div>
+                <div class="review-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Aenean fermentum risus id
+                  tortor. Aliquam erat volutpat. Duis bibendum, lectus ut
+                  viverra rhoncus, dolor nunc faucibus libero, eget facilisis
+                  enim ipsum id lacus. Sed convallis magna eu sem. Aenean vel
+                  massa quis mauris vehicula lacinia. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Fusce tellus. Vivamus luctus egestas leo.
+                  Praesent dapibus. Etiam commodo dui eget wisi.
+                </div>
+              </div>
+              <div class="review-box">
+                <div class="review-author">
+                  Eduard Francimoro
+                </div>
+                <div class="review-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Aenean fermentum risus id
+                  tortor. Aliquam erat volutpat. Duis bibendum, lectus ut
+                  viverra rhoncus, dolor nunc faucibus libero, eget facilisis
+                  enim ipsum id lacus. Sed convallis magna eu sem. Aenean vel
+                  massa quis mauris vehicula lacinia. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Fusce tellus. Vivamus luctus egestas leo.
+                  Praesent dapibus. Etiam commodo dui eget wisi.
+                </div>
+              </div>
+              <div class="review-box">
+                <div class="review-author">
+                  Eduard Francimoro
+                </div>
+                <div class="review-text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Aenean fermentum risus id
+                  tortor. Aliquam erat volutpat. Duis bibendum, lectus ut
+                  viverra rhoncus, dolor nunc faucibus libero, eget facilisis
+                  enim ipsum id lacus. Sed convallis magna eu sem. Aenean vel
+                  massa quis mauris vehicula lacinia. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Fusce tellus. Vivamus luctus egestas leo.
+                  Praesent dapibus. Etiam commodo dui eget wisi.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -189,13 +245,100 @@
             <p>development</p>
           </div>
           <div class="footer-box">
-            <h3>Development</h3>
-            <p>This</p>
-            <p>page</p>
-            <p>is</p>
-            <p>under</p>
-            <p>heavy</p>
-            <p>development</p>
+            <h3>Send us an email</h3>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="f589cd3f-b392-4336-b7e3-90149807827d"
+              />
+              <div class="input-field-box">
+                <label> Name: </label>
+                <input
+                  class="input-field"
+                  placeholder="Your name.."
+                  type="text"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="input-field-box">
+                <label> Email: </label>
+                <input
+                  class="input-field"
+                  placeholder="Your email.."
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="input-field-box">
+                <label> Message: </label>
+                <textarea
+                  class="input-field"
+                  placeholder="Your message.."
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+              <button id="submit" type="submit">Submit Form</button>
+            </form>
+          </div>
+          <div class="connect-container section-container">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/thenutronia/?igshid=YmMyMTA2M2Y%3D"
+            >
+              <div class="connect-box">
+                <h3>Instagram</h3>
+                <img
+                  class="connect-box-img"
+                  src="./res/img/contacts/instagramc.png"
+                  alt="logo of instagram"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@thenutronia?_t=8XegnbBLFjy&_r=1"
+            >
+              <div class="connect-box">
+                <h3>TikTok</h3>
+                <img
+                  class="connect-box-img"
+                  src="./res/img/contacts/tiktokc.png"
+                  alt="logo of facebook"
+                />
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/people/Nutronia/100088896672187/?mibextid=LQQJ4d"
+            >
+              <div class="connect-box">
+                <h3>Facebook</h3>
+                <img
+                  class="connect-box-img"
+                  src="./res/img/contacts/facebookc.png"
+                  alt="logo of facebook"
+                />
+              </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/TheNutronia">
+              <div class="connect-box">
+                <h3>Twitter</h3>
+                <img
+                  class="connect-box-img"
+                  src="./res/img/contacts/twitterc.png"
+                  alt="logo of twitter"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </footer>
