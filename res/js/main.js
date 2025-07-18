@@ -4,9 +4,6 @@ let imgs = document.getElementsByClassName("header-img");
 let coll = document.getElementsByClassName("faq-q-box");
 let cont = document.getElementsByClassName("faq-a-box");
 
-/*let emailSent = document.getElementById("submit");
-let inputFields = document.getElementsByClassName("input-field");*/
-
 let changephotosloop = setInterval(changephotos, 5000);
 let index = 0;
 function changephotos() {
