@@ -116,13 +116,14 @@ header {
   justify-content: center;
   gap: 10px 30px;
   font-size: 18px;
+  font-weight: 900;
 
   position: sticky;
   top: 0;
 }
 .nav-box {
   padding: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: ease-in-out 0.3s;
 }
 
@@ -141,13 +142,13 @@ header {
   width: 100%;
 }
 
-.section:nth-child(even){
+.section:nth-child(even) {
   background-color: rgb(188, 201, 179);
 }
 
 #about,
 #faq,
-#review {
+#testimonial {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,7 +176,7 @@ header {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   align-content: center;
 }
 /**/
@@ -184,29 +185,39 @@ header {
 .about-box-big,
 .about-box-medium,
 .about-box-small {
-  border: 1px solid rgb(220, 220, 220);
+  /*border: 1px solid rgb(220, 220, 220);*/
   border-radius: 10px;
   padding: 20px;
-  background-color: rgb(210, 210, 210);
+  /*background-color: rgb(210, 210, 210);*/
 
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   min-height: 100px;
   overflow: hidden;
+
+  text-align: justify;
 }
 
 .about-box-big {
-  width: 100%;
+  width: 93%;
   min-width: 250px;
 }
 .about-box-medium {
   width: 45%;
-  min-width: 150px;
+  min-width: 200px;
 }
 .about-box-small {
   width: 20%;
-  min-width: 100px;
+  min-width: 200px;
+}
+
+.about-box-img {
+  /*object-fit: cover;
+  object-position: center;*/
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
 }
 
 /**/
@@ -217,8 +228,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  background-color: rgb(180, 180, 180);
-  border: 1px solid rgb(140, 140, 140);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
   padding: 20px;
   font-size: 14px;
@@ -226,22 +237,53 @@ header {
 }
 
 .faq-q-box:hover {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(235, 235, 235);
 }
 
 .faq-a-box {
   display: none;
+  /*opacity: 0;*/
   overflow: hidden;
+  transition: ease-in-out 0.3s;
 }
 
-/*review section*/
-
-.review-box{
+.faq-no-match {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: rgb(210, 210, 210);
-  border: 1px solid rgb(220, 220, 220);
+  row-gap: 30px;
+  padding-top: 50px;
+  font-weight: 600;
+}
+
+.ask-me-container {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.ask-me-text {
+  padding: 15px;
+  background-color: rgb(155, 180, 145);
+  border: 1px solid rgb(160, 185, 145);
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.ask-me-text:hover {
+  background-color: rgb(175, 200, 170);
+}
+
+/*testimonials section*/
+
+.testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(220, 220, 220);
   border-radius: 5px;
   min-width: 300px;
   min-height: 300px;
@@ -270,7 +312,7 @@ footer {
   gap: 100px;
 }
 
-.footer-box{
+.footer-box {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -305,7 +347,7 @@ footer {
   height: auto;
 }
 
-.input-field-box{
+.input-field-box {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -319,19 +361,20 @@ footer {
   border-radius: 5px;
 }
 
-#submit{
+#submit {
   width: 100%;
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: rgb(0, 150, 0);
   color: white;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: rgb(0, 170, 0);
-}*/
+}
+*/
 
 /**/
 .side-bar {
@@ -341,6 +384,16 @@ footer {
 
 a:link {
   text-decoration: none;
+}
+
+/*Text*/
+.about-box-small,
+.about-box-medium,
+.about-box-big,
+.faq-q-box,
+.faq-a-box,
+.testimonial-box {
+  font-size: 16px;
 }
 
 /**/
@@ -355,6 +408,16 @@ a:link {
     width: 0%;
   }
 }
+@media screen and (max-width: 650px) {
+  .section-content {
+    width: 90%;
+  }
+  .about-box-big,
+  .about-box-medium {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .nav-box {
     font-size: 15px;
