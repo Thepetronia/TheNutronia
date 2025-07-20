@@ -6,6 +6,10 @@ let cont = document.getElementsByClassName("faq-a-box");
 
 let changephotosloop = setInterval(changephotos, 5000);
 let index = 0;
+
+let openerMenu = document.getElementById("nav-opener");
+let smallMenu = document.getElementById("nav-container-compact");
+
 function changephotos() {
   if (index == imgs.length - 1) {
     index = 0;
@@ -54,6 +58,22 @@ for (let i = 0; i < coll.length; i++) {
       inputFields[i].value = "";
   }
 });*/
+
+/*Responsive menu smaller*/
+let isOpened = false
+openerMenu.addEventListener("click", function () {
+  if (isOpened === true){
+    /*smallMenu.style.display = "none"*/
+    smallMenu.style.top = "-1500px"
+    openerMenu.style.rotate = "0deg"
+  }
+  else{
+    /*smallMenu.style.display = "flex"*/
+    smallMenu.style.top = "60px"
+    openerMenu.style.rotate = "90deg"
+  }
+  isOpened = !isOpened
+})
 
 window.onload = () => {
   changephotosloop;
