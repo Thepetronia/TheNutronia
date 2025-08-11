@@ -1,0 +1,16 @@
+{
+    "en": {
+        "nav": ["About", "FAQ", "Testimonials", "Recipes", "Contacts"],
+        "about":{
+            "title": "About",
+            "boxes": ["My name is Petra Dohnalova and I am a registered dietitian and a lifestyle medicine practitioner. You might be wondering: What exactly is a registered dietitian? A <b>Registered Dietitian (RD or RDN)</b> is a board-certified food and nutrition expert who provides personalized, evidence-based dietary guidance to improve health and manage medical conditions.", "Now that we’ve got that covered, I can also share that I am a passionate foodie. <i>Why does that matter?</i> Because working with someone who loves food has its perks — I explore global cuisines for fun, so eating healthy never gets boring. I want your meals to be not just nutritious, but also delicious and visually appealing. If you’re a fellow foodie, you know exactly what I mean."]
+        },
+        "faq":{
+            "title": "FAQ",
+            "faq-q": ["test", "test1"]
+        }
+    },
+    "cz": {
+        "nav": ["O nás", "FAQ", "Zpětné vazby", "Recepty", "Kontakty"]
+    }
+}

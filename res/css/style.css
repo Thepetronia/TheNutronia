@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
-  /*user-select: none;*/
+  user-select: none;
 }
 html {
   scroll-behavior: smooth;
+  /*color-scheme: light dark;*/
 }
 
 .main-container {
@@ -37,15 +38,17 @@ header {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*Header Title ** */
 .header-title {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 30px;
   padding: 20px;
+  height: 100%;
   /*background-color: deeppink;*/
 }
 
@@ -56,7 +59,7 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 1s;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,6 +119,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   background-color: rgb(148, 165, 135);
+  /*background-color: rgb(190, 200, 180);*/
   justify-content: center;
   gap: 10px 30px;
   font-size: 18px;
@@ -132,6 +136,7 @@ header {
 
 .nav-box-wide:hover {
   background-color: rgb(172, 187, 161);
+  /*background-color: rgb(190, 200, 180);*/
 }
 /**/
 
@@ -179,10 +184,12 @@ header {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
-  width: 100%;
-  background-color: rgb(148, 165, 135);
+  /*old*/ /*width: 100%;
+  background-color: rgb(148, 165, 135);*/
   border-top: 2px solid rgb(130, 145, 120);
-  border-bottom: 2px solid rgb(120, 130, 110);
+  /*old*/ /*border-bottom: 2px solid rgb(120, 130, 110);*/
+
+  border-radius: 0px 0px 15px 0px;
 
   transition: ease-in-out 0.5s;
 }
@@ -194,13 +201,22 @@ header {
 }
 
 #nav-container-compact > ul > li {
+  /*new*/
+  transition: ease-in-out 0.3s;
+
   border-bottom: 2px solid rgb(110, 120, 100);
+  /*new*/
+  background-color: rgb(148, 165, 135);
 }
 
 #nav-container-compact > ul > li:last-child {
-  border-bottom: 0px;
+  /*new*/
+  border-bottom: 2px solid rgb(110, 120, 100);
+  /*new*/
+  border-radius: 0px 0px 15px 0px;
 }
 
+/*old*/
 .nav-box-compact {
   text-align: center;
   /*min-width: 180px;*/
@@ -211,7 +227,7 @@ header {
   transition: ease-in-out 0.3s;
 }
 
-.nav-box-compact:hover {
+#nav-container-compact > ul > li:hover {
   background-color: rgb(172, 187, 161);
 }
 /**/
@@ -227,13 +243,20 @@ header {
   width: 100%;
 }
 
-.section:nth-child(even) {
-  background-color: rgb(188, 201, 179);
+section:nth-child(even) {
+  /*background-color: rgb(220, 225, 210);*/
+  background-color: rgb(215, 220, 210);
+}
+
+section:nth-child(odd) {
+  background-color: rgb(255, 250, 250);
 }
 
 #about,
+#offer,
 #faq,
-#testimonial {
+#testimonial,
+#recipes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -241,7 +264,11 @@ header {
   width: 100%;
   min-height: 750px;
   padding: 0px 0px 30px 0px;
-  scroll-margin-top: 55px;
+}
+
+section,
+footer {
+  scroll-margin-top: 60px;
 }
 
 .section-title {
@@ -261,19 +288,33 @@ header {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   align-content: center;
 }
 /**/
 
 /* About section*/
+.about-container {
+  gap: 80px 25px;
+}
+
+.about-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+
+  gap: 25px;
+  padding-bottom: 50px;
+}
+
 .about-box-big,
 .about-box-medium,
 .about-box-small {
-  /*border: 1px solid rgb(220, 220, 220);*/
+  /*border: 1px solid rgb(220, 220, 220);
   border-radius: 10px;
   padding: 20px;
-  /*background-color: rgb(210, 210, 210);*/
+  background-color: rgb(210, 210, 210);*/
 
   display: flex;
   flex-wrap: wrap;
@@ -282,6 +323,9 @@ header {
   overflow: hidden;
 
   text-align: justify;
+  text-indent: 30px;
+
+  row-gap: 20px;
 }
 
 .about-box-big {
@@ -302,7 +346,10 @@ header {
   object-position: center;*/
   background-size: cover;
   background-position: center;
-  min-height: 250px;
+  object-fit: cover;
+  min-height: 300px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
 }
 
 /**/
@@ -313,8 +360,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(230, 230, 230);
+  /*background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(230, 230, 230);*/
+
+  background-color: rgb(190, 195, 185);
+  border: 1px solid rgb(170, 175, 160);
+
+  /*background-color: rgb(200, 205, 190);
+  border: 1px solid rgb(200, 200, 190);*/
+
   border-radius: 5px;
   padding: 20px;
   font-size: 14px;
@@ -322,15 +376,35 @@ header {
   cursor: pointer;
 }
 
+.faq-q-box > p {
+  font-weight: bold;
+}
+
 .faq-q-box:hover {
-  background-color: rgb(235, 235, 235);
+  /*background-color: rgb(235, 235, 235);*/
+  background-color: rgb(200, 210, 195);
+  /*background-color: rgb(220, 225, 210);*/
 }
 
 .faq-a-box {
-  display: none;
-  /*opacity: 0;*/
+  /*display: none;*/
   overflow: hidden;
-  transition: ease-in-out 0.3s;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+  height: 0;
+}
+
+.faq-a-box > p {
+  padding-top: 30px;
+}
+
+.faq-a-box.expanded {
+  height: calc-size(auto, size);
+}
+
+.faq-q-box,
+.faq-a-box {
+  text-align: justify;
 }
 
 .faq-no-match {
@@ -350,8 +424,8 @@ header {
 
 .ask-me-text {
   padding: 15px;
-  background-color: rgb(155, 180, 145);
-  border: 1px solid rgb(160, 185, 145);
+  background-color: rgb(190, 195, 185);
+  border: 1px solid rgb(170, 175, 160);
   border-radius: 10px;
   color: black;
   font-weight: 600;
@@ -359,10 +433,14 @@ header {
 }
 
 .ask-me-text:hover {
-  background-color: rgb(175, 200, 170);
+  background-color: rgb(200, 210, 195);
 }
 
 /*testimonials section*/
+
+.testimonial-content {
+  width: 60%;
+}
 
 .testimonial-box {
   display: flex;
@@ -381,7 +459,7 @@ header {
 /* footer section*/
 
 footer {
-  background-color: rgb(110, 122, 100);
+  background-color: rgb(140, 150, 135);
   color: white;
 
   display: flex;
@@ -411,8 +489,8 @@ footer {
 .connect-box {
   width: 250px;
   height: 250px;
-  background-color: rgb(125, 140, 120);
-  border: 1px solid rgb(110, 140, 100);
+  background-color: rgb(148, 158, 140);
+  border: 1px solid rgb(135, 140, 130);
   border-radius: 5px;
   padding: 20px;
   text-align: center;
@@ -425,7 +503,7 @@ footer {
 }
 
 .connect-box:hover {
-  background-color: rgb(140, 160, 135);
+  background-color: rgb(160, 170, 150);
 }
 
 .connect-box-img {
@@ -450,16 +528,16 @@ footer {
 #submit {
   width: 100%;
   padding: 10px;
-  border: 1px solid black;
   border-radius: 10px;
-  background-color: rgb(0, 150, 0);
+  background-color: rgb(160, 170, 145);
+  border: 1px solid rgb(160, 165, 150);
   color: white;
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 
 #submit:hover {
-  background-color: rgb(0, 170, 0);
+  background-color: rgb(170, 180, 150);
 }
 */
 
@@ -486,6 +564,11 @@ a:link {
 /**/
 
 /*Responsive for mobiles*/
+@media screen and (max-width: 1050px) {
+  .testimonial-content {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 800px) {
   .section-content {
     width: 80%;
@@ -495,7 +578,8 @@ a:link {
     width: 0%;
   }
 }
-@media screen and (max-width: 730px) {
+/*responsive menu*/
+@media screen and (max-width: 910px) {
   #nav-container-wide {
     display: none;
   }
@@ -506,6 +590,7 @@ a:link {
     font-size: 25px;
   }
 }
+/**/
 
 @media screen and (max-width: 650px) {
   .section-content {
@@ -522,4 +607,64 @@ a:link {
     font-size: 15px;
   }
 }
-/**/
+
+/*color-scheme*/
+/*@media (prefers-color-scheme: light) {
+  #nav-container-wide, .nav-container-compact-opener{
+    background-color: rgb(148, 165, 135);
+  }
+  footer{
+    background-color: rgb(140, 150, 135);
+  }
+  section, .ask-me-text, .nav-box-wide, .nav-box-compact{
+    color: black;
+  }
+  section:nth-child(even) {
+    background-color: rgb(220, 225, 210);
+  }
+
+  section:nth-child(odd) {
+    background-color: rgb(255, 250, 250);
+  }
+  .faq-q-box{
+    background-color: rgb(200, 205, 190);
+    border: 1px solid rgb(200, 200, 190);
+  }
+  .testimonial-box {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(220, 220, 220);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #nav-container-wide, .nav-container-compact-opener{
+    background-color: rgb(95, 105, 85);
+  }
+  footer{
+    background-color: rgb(100, 105, 95);
+  }
+  section, .ask-me-text, .nav-box-wide, .nav-box-compact{
+    color: white;
+  }
+  section:nth-child(even) {
+    background-color: rgb(60, 60, 60);
+  }
+
+  section:nth-child(odd) {
+    background-color: rgb(30, 30, 30);
+  }
+  .about-box-img{
+    border: 1px solid rgb(55, 55, 55);
+  }
+  .faq-q-box, .ask-me-text{
+    background-color: rgb(90, 90, 90);
+    border: 1px solid rgb(55, 55, 55);
+  }
+  .faq-q-box:hover, .ask-me-text:hover{
+    background-color: rgb(110, 110, 110);
+  }
+  .testimonial-box {
+    background-color: rgb(100, 100, 100);
+    border: 2px solid rgb(55, 55, 55);
+  }
+}*/

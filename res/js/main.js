@@ -10,6 +10,12 @@ let index = 0;
 let openerMenu = document.getElementById("nav-opener");
 let smallMenu = document.getElementById("nav-container-compact");
 
+
+
+/*let textFields = document.getElementsByClassName("lang")
+const data = await fetch("./res/data/lang.json");
+const lang = await data.json(data);*/
+
 function changephotos() {
   if (index == imgs.length - 1) {
     index = 0;
@@ -45,11 +51,16 @@ for (let i = 0; i < navbut.length; i++) {
 /*FAQ collapsibles*/
 for (let i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
-    if (cont[i].style.display === "block") {
+    cont[i].classList.toggle("expanded");
+    /*if (cont[i].style.display == "block") {
       cont[i].style.display = "none";
+      //cont[i].style.height = 0;
+      cont[i].style.opacity = 0;
     } else {
       cont[i].style.display = "block";
-    }
+      //cont[i].style.height = "auto";
+      cont[i].style.opacity = 1;
+    }*/
   });
 }
 
@@ -74,6 +85,9 @@ openerMenu.addEventListener("click", function () {
   }
   isOpened = !isOpened
 })
+
+/*Language changer*/
+
 
 window.onload = () => {
   changephotosloop;
