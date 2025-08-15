@@ -49,20 +49,20 @@ for (let i = 0; i < navbut.length; i++) {
 }
 
 /*FAQ collapsibles*/
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    cont[i].classList.toggle("expanded");
-    /*if (cont[i].style.display == "block") {
-      cont[i].style.display = "none";
-      //cont[i].style.height = 0;
-      cont[i].style.opacity = 0;
-    } else {
-      cont[i].style.display = "block";
-      //cont[i].style.height = "auto";
-      cont[i].style.opacity = 1;
-    }*/
-  });
-}
+//for (let i = 0; i < coll.length; i++) {
+//  coll[i].addEventListener("click", function () {
+//    cont[i].classList.toggle("expanded");
+//    /*if (cont[i].style.display == "block") {
+//      cont[i].style.display = "none";
+//      //cont[i].style.height = 0;
+//      cont[i].style.opacity = 0;
+//    } else {
+//      cont[i].style.display = "block";
+//      //cont[i].style.height = "auto";
+//      cont[i].style.opacity = 1;
+//    }*/
+//  });
+//}
 
 /*emailSent.addEventListener("click", function () {
   for (let i = 0; i < inputFields.length; i++) {
@@ -76,13 +76,14 @@ openerMenu.addEventListener("click", function () {
   if (isOpened === true){
     /*smallMenu.style.display = "none"*/
     smallMenu.style.top = "-1500px"
-    openerMenu.style.rotate = "0deg"
+    //openerMenu.style.rotate = "0deg"
   }
   else{
     /*smallMenu.style.display = "flex"*/
     smallMenu.style.top = "60px"
-    openerMenu.style.rotate = "90deg"
+    //openerMenu.style.rotate = "90deg"
   }
+  openerMenu.classList.toggle("change");
   isOpened = !isOpened
 })
 
