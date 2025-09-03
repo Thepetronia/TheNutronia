@@ -1,20 +1,20 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /*font-family: "Courier New", Courier, monospace;*/
   /*user-select: none;*/
-  /*font-family: sans-serif;*/
 }
 
 /*Fonts*/
-/*h1{
-  font-family:  Bradley Hand, cursive;
+h1, h2, h3, .nav-box-wide, .nav-box-compact{
+  font-family: "Courier New", Courier, monospace;
 }
 
-p{
-  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
-}*/
 
+
+p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/**/
 
 html {
   scroll-behavior: smooth;
@@ -61,7 +61,6 @@ header {
   font-size: 30px;
   padding: 20px;
   height: 100%;
-  /*background-color: deeppink;*/
 }
 
 .header-img {
@@ -336,11 +335,41 @@ section:nth-child(odd) {
   background-color: rgb(255, 250, 250);
 }
 
-.lang-container{
+#lang-container{
   position: fixed;
   z-index: 2;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: -60px;
+
+  transition: .3s ease-in-out;
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#lang-box-opener{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(155, 190, 128, 0.5);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+#lang-box-opener:hover{
+  background-color: rgb(155, 190, 128);
+}
+
+#lang-box{
+  position: relative;
+  right: -100px;
+  transition: .3s ease-in-out;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .lang-button.active{
@@ -351,7 +380,9 @@ section:nth-child(odd) {
 .lang-button{
   padding: 20px;
   box-shadow: 0;
+  color: black;
   border: 1.5px solid black;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
 
   transition: .3s ease-in-out;
@@ -368,7 +399,7 @@ section:nth-child(odd) {
 #offer,
 #faq,
 #testimonial,
-#recipes {
+#freeres {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -532,6 +563,10 @@ footer {
   background-color: rgb(155, 190, 128);
   border-color: rgb(142, 184, 110);
 }
+
+.about-grid-text-notes > li > p{
+  padding-right: 20px;
+}
 /**/
 
 /* Offer section */
@@ -587,7 +622,7 @@ footer {
   align-items: center;
   column-gap: 20px;
 
-  padding: 20px;
+  margin: 20px;/*padding*/
 }
 
 .offer-grid-notes > li > p {
@@ -653,6 +688,10 @@ footer {
 .offer-box-notes > li:hover, .offer-grid-notes > li:hover .offer-grid-svg
 /*.offer-grid-svg:hover*/ {
   transform: translate(8px, 0);
+}
+
+.offer-box-notes > li > p{
+  padding-right: 20px;
 }
 
 /**/
@@ -883,57 +922,72 @@ footer {
   height: auto;
 }
 
-/*Recipes*/
+/*free resources*/
 
-.recipes-container{
+.freeres-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 20px;
 }
 
-.recipes-box{
-  width: 200px;
-  height: 200px;
+.freeres-box{
+  width: 300px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(220, 220, 220);
+  box-shadow: 0;
   border-radius: 20px;
   padding: 20px;
 
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  transition: .3s ease-in-out;
 }
 
-.recipes-box > h3 {
-  width: 100%;
-  height: 40%;
-  padding-bottom: 10px;
+.freeres-box:hover{
+  border: 2px solid rgb(142, 184, 110);
+  box-shadow: rgba(45, 45, 45, 0.3) 4px 3px 6px 0px;
 }
 
-.recipes-box > p{
-  width: 100%;
-  height: 40%;
+.freeres-box > h3 {
+  height: 50px;
+  padding-bottom: 50px;
+}
+
+.freeres-text{
+  height: 125px;
   overflow: auto;
+  margin-bottom: 20px; /*TODO Risking*/
+  text-align: justify;
 }
 
-.recipes-box > a{
-  width: 100%;
-  height: 20%;
-  color: rgb(20, 20, 20);
-
-  border: 1px solid black;
-  border-radius: 5px;
-
+.freeres-files{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: .4s;
+  column-gap: 20px;
 }
 
-.recipes-box > a:hover{
-  border: 1px dashed black;
-  background-color: rgb(221, 221, 221);
+.freeres-files > a{
+  /*width: 45%;*/
+
+  text-align: center;
+  border: 1px solid rgb(80, 80, 80);
+  border-radius: 10px;
+  padding: 10px;
+  
+  color: black;
+
+  transition: .4s ease-in-out;
+}
+
+.freeres-files > a:hover{
+  background-color: rgb(155, 190, 128);
+  border: 1px solid rgb(142, 184, 110);
+  box-shadow: rgba(45, 45, 45, 0.3) 4px 3px 6px 0px;
 }
 
 /* footer section*/
@@ -966,6 +1020,36 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
+  gap: 10px;
+}
+
+.footer-box > h2{
+  padding-bottom: 20px;
+}
+
+.contacts-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacts-box > img{
+  width: 25px;
+  height: 25px;
+}
+
+.contacts-box > p > span > a{
+  color: rgb(200, 200, 200);
+  transition: .2s ease-in-out;
+}
+
+.contacts-box > p > span > a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }
 
 .connect-container {
@@ -991,7 +1075,7 @@ footer {
 .connect-box:hover {
   background-color: rgb(103, 134, 81);
   transform: scale(1.05);
-  color: black;
+  /*color: black;*/
 }
 
 .connect-box-img {
@@ -999,33 +1083,49 @@ footer {
   height: auto;
 }
 
+.input-field-container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  row-gap: 20px;
+  /*padding-top: 10px;*/
+}
+
 .input-field-box {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 10px;
-  row-gap: 5px;
+  /*padding: 10px;*/
+  row-gap: 10px;
 }
 
-.input-field {
+.input-field, #submit {
   width: 100%;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1.5px solid rgb(255, 255, 255);
+  background-color: rgb(129, 158, 108);
+  color: white;
+  border-radius: 0px;
+  padding: 10px;
+}
+
+.input-field::placeholder{
+  color: white;
 }
 
 #submit {
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgb(82, 117, 57);
+  /*width: 100%;
+  padding: 10px;*/
+  border-radius: 5px;
+  /*background-color: rgb(82, 117, 57);
   border: 1px solid rgb(160, 165, 150);
-  color: white;
+  color: white;*/
   transition: ease-in-out 0.2s;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 #submit:hover {
   background-color: rgb(98, 139, 68);
+  border-radius: 10px;
 }
 
 #copyright {
@@ -1102,7 +1202,7 @@ a:link {
   }
 }
 /*responsive menu*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #nav-container-wide {
     display: none;
   }
@@ -1129,6 +1229,15 @@ a:link {
   .about-box-medium {
     width: 100%;
   }*/
+}
+
+@media screen and (max-width: 400px) {
+  .footer-container{
+    padding: 20px;
+  }
+  .footer-box{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 350px) {

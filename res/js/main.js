@@ -1,13 +1,13 @@
-let navbut = document.getElementsByClassName("nav-img-button");
-let imgs = document.getElementsByClassName("header-img");
+const navbut = document.getElementsByClassName("nav-img-button");
+const imgs = document.getElementsByClassName("header-img");
 
-let coll = document.getElementsByClassName("faq-q-box");
-let cont = document.getElementsByClassName("faq-a-box");
+/*let coll = document.getElementsByClassName("faq-q-box");
+let cont = document.getElementsByClassName("faq-a-box");*/
 
 let changephotosloop = setInterval(changephotos, 5000);
 let photoIndex = 0;
 
-let testimonialBoxes = document.getElementsByClassName("testimonial-show-box");
+const testimonialBoxes = document.getElementsByClassName("testimonial-show-box");
 let testimonialIndex = 0;
 
 let leftArrow = document.getElementById("arrow-left");
@@ -16,15 +16,26 @@ let navTestimonialsButtons = document.getElementsByClassName(
   "testimonial-show-button"
 );
 
-let openerMenu = document.getElementById("nav-opener");
-let smallMenu = document.getElementById("nav-container-compact");
+const openerMenu = document.getElementById("nav-opener");
+const smallMenu = document.getElementById("nav-container-compact");
+
+const langContainer = document.getElementById("lang-container");
+const langOpener = document.getElementById("lang-box-opener");
+const langSwapper = document.getElementById("lang-box");
+let isLangMenuOpen = false;
+
+const user = "thenutronia";
+const domain = "gmail.com";
+const email = user + "@" + domain;
+const emailLink = `<a href="mailto:${email}">${email}</a>`;
+document.getElementById("contact-email").innerHTML = emailLink;
 
 /*let textFields = document.getElementsByClassName("lang")
 const data = await fetch("./res/data/lang.json");
 const lang = await data.json(data);*/
 
 /*Lang*/
-let translations = null;
+/*let translations = null;
 let supportedLangs = ["en", "cs"];
 const langButton = document.getElementsByClassName("lang-button");
 
@@ -44,12 +55,11 @@ const testimonailBoxText = document.getElementsByClassName("testimonial-lang-tex
 const contactsTitle = document.getElementsByClassName("footer-lang-title")
 const contactsCont = document.getElementsByClassName("footer-lang-contacts")
 const contactsForm = document.getElementsByClassName("footer-lang-form")
-const contactsPlace = document.getElementsByClassName("footer-lang-placeholder")
+const contactsPlace = document.getElementsByClassName("footer-lang-placeholder")*/
 
 /*const textToChange = document.querySelectorAll(".nav-lang");*/
 
-/*Function to load data from JSON (Languages)*/
-async function loadLangData() {
+/*async function loadLangData() {
   const res = await fetch("./res/data/lang.json");
   const data = await res.json();
   translations = data;
@@ -57,7 +67,6 @@ async function loadLangData() {
   detectLang()
 }
 
-/*Function to change language at website*/
 function switchLang(lang) {
   document.documentElement.lang = lang;
   for (let i = 0; i < translations[lang].nav.length; i++) {
@@ -106,7 +115,6 @@ function switchLang(lang) {
   }
 }
 
-/*Function to detect users language used in browser*/
 function detectLang() {
   const userLang = navigator.language || navigator.userLanguage;
   let detected = userLang.split("-")[0];
@@ -121,7 +129,6 @@ function detectLang() {
   switchLang("en");
 }
 
-/*Function to active lang button*/
 for (let indexClick = 0; indexClick < langButton.length; indexClick++){
   langButton[indexClick].addEventListener("click", () => {
     for (let index = 0; index < langButton.length; index++){
@@ -130,10 +137,24 @@ for (let indexClick = 0; indexClick < langButton.length; indexClick++){
     langButton[indexClick].classList.add("active");
     switchLang(langButton[indexClick].value)
   })
-}
+}*/
 
 /**/
 
+/*Lang switch*/
+
+langOpener.addEventListener("click", () => {
+  if (!isLangMenuOpen) {
+    langContainer.style.right = "20px";
+    langSwapper.style.right = "0px";
+  } else {
+    langContainer.style.right = "-60px";
+    langSwapper.style.right = "-100px";
+  }
+  isLangMenuOpen = !isLangMenuOpen;
+});
+
+/*IMAGE*/
 function changephotos() {
   if (photoIndex == imgs.length - 1) {
     photoIndex = 0;
@@ -147,8 +168,6 @@ function changephotos() {
   imgs[photoIndex].style.opacity = 1;
   navbut[photoIndex].style.opacity = 1;
 }
-
-/*IMAGE*/
 
 for (let i = 0; i < navbut.length; i++) {
   navbut[i].addEventListener("click", () => {
@@ -274,5 +293,5 @@ openerMenu.addEventListener("click", () => {
 
 window.onload = () => {
   changephotosloop;
-  loadLangData();
+  //loadLangData();
 };
