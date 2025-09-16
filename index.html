@@ -22,12 +22,15 @@
     >
     <meta
       property="og:image"
-      content="https://thenutronia.com/res/img/logo/TheNutronia_logo_wg.png"
+      content="https://thenutronia.com/res/img/logo/mti.webp"
     >
     <meta property="og:url" content="https://thenutronia.com/" >
     <meta property="og:type" content="website" >
 
-    <!--<meta name="twitter:card" content="summary_large_image" >-->
+    <meta
+      name="twitter:card"
+      content="https://thenutronia.com/res/img/logo/mti.webp"
+    >
     <meta name="twitter:title" content="TheNutronia" >
     <meta
       name="twitter:description"
@@ -35,19 +38,19 @@
     >
     <meta
       name="twitter:image"
-      content="https://thenutronia.com/res/img/logo/TheNutronia_logo_wg.png"
+      content="https://thenutronia.com/res/img/logo/logo_plain.webp"
     >
 
     <title>TheNutronia</title>
     <link rel="stylesheet" href="./res/css/style.css" >
     <link
       rel="shortcut icon"
-      href="./res/img/small_page/favicon.ico"
+      href="./res/img/logo/favicon.ico"
       type="image/x-icon"
     >
     <link
       rel="apple-touch-icon"
-      href="./res/img/logo/TheNutronia_logo_wg.png"
+      href="https://thenutronia.com/res/img/logo/logo_plain.webp"
     >
   </head>
   <body>
@@ -57,12 +60,16 @@
           <div class="header-img-shadow">
             <div class="header-title">
               <div class="header-text">
-                <a href="#">
+                <img
+                  src="./res/img/logo/logo_c_f_btw.webp"
+                  alt="logo of thenutronia"
+                >
+                <!--<a href="#">
                   <h1>
                     <span class="header-small-text"> the </span>
                     Nutronia
                   </h1>
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
@@ -925,6 +932,14 @@
                   </p>
                 </div>
               </details>
+              <details class="faq-box">
+                <summary class="faq-q-box">What is Lifestyle Medicine?</summary>
+                <div class="faq-a-box">
+                  <a target="_blank" href="./res/doc/lifestyle_medicine.pdf">
+                    Read
+                  </a>
+                </div>
+              </details>
               <div class="faq-no-match">
                 <p>Didn’t find the answer you were looking for?</p>
                 <p>
@@ -1124,7 +1139,7 @@
                 <div class="freeres-files">
                   <a
                     target="_blank"
-                    href="./res/doc/Balanced_Plant_based_eating.pdf"
+                    href="./res/doc/balanced_plant_based_eating.pdf"
                   >
                     Read
                   </a>
@@ -1138,7 +1153,7 @@
                   understand blood sugar balance.
                 </p>
                 <div class="freeres-files">
-                  <a target="_blank" href="./res/doc/Blood_Sugar_balance.pdf"
+                  <a target="_blank" href="./res/doc/blood_sugar_balance.pdf"
                     >Read</a
                   >
                 </div>
@@ -1146,14 +1161,12 @@
               <div class="freeres-box">
                 <h3>Gut Health</h3>
                 <p class="freeres-text">
-                  Discover how a plant-based diet can transform your gut
-                  health, boost energy, and support overall well-being with
-                  simple, science-backed tips.
+                  Discover how a plant-based diet can transform your gut health,
+                  boost energy, and support overall well-being with simple,
+                  science-backed tips.
                 </p>
                 <div class="freeres-files">
-                  <a target="_blank" href="./res/doc/Gut_health.pdf"
-                    >Read</a
-                  >
+                  <a target="_blank" href="./res/doc/gut_health.pdf">Read</a>
                 </div>
               </div>
               <div class="freeres-box">
@@ -1166,7 +1179,7 @@
                 <div class="freeres-files">
                   <a
                     target="_blank"
-                    href="./res/doc/Meat_Free_Diets_Article.pdf"
+                    href="./res/doc/meat_free_diets_article.pdf"
                     >Read</a
                   >
                 </div>
@@ -1177,63 +1190,74 @@
       </div>
       <footer id="contacts">
         <div class="footer-container">
-          <div class="footer-box">
-            <h2>Contacts</h2>
-            <div class="contacts-box">
-              <img src="./res/img/svg/phone.svg" alt="icon of phone" >
-              <p>
-                Phone: <span><a href="#">X</a></span>
-              </p>
+          <div class="contacts-container">
+            <div class="footer-box footer-box-1">
+              <h2>Contacts</h2>
+              <div class="contacts-box">
+                <img src="./res/img/svg/phone.svg" alt="icon of phone" >
+                <p>
+                  Phone: <span><a href="#">X</a></span>
+                </p>
+              </div>
+              <div class="contacts-box">
+                <img src="./res/img/svg/mail.svg" alt="icon of letter" >
+                <p>Email: <span id="contact-email"></span></p>
+              </div>
             </div>
-            <div class="contacts-box">
-              <img src="./res/img/svg/mail.svg" alt="icon of letter" >
-              <p>Email: <span id="contact-email"></span></p>
-            </div>
-          </div>
-          <div class="footer-box">
-            <h2>Email us</h2>
-            <form
-              class="input-field-container"
-              action="https://formspree.io/f/mnnzeeez"
-              method="POST"
-            >
-              <div class="input-field-box">
-                <label for="name"> Name: </label>
-                <input
-                  class="input-field"
-                  autocomplete="off"
-                  id="name"
-                  placeholder="Your name.."
-                  type="text"
-                  name="name"
-                  required
+            <div class="footer-box footer-box-2">
+              <div class="footer-logo">
+                <img
+                  class="footer-logo"
+                  src="./res/img/logo/logo_c_p_btw.webp"
+                  alt="logo of thenutronia"
                 >
               </div>
-              <div class="input-field-box">
-                <label for="email"> Email: </label>
-                <input
-                  class="input-field"
-                  autocomplete="off"
-                  id="email"
-                  placeholder="Your email.."
-                  type="email"
-                  name="email"
-                  required
-                >
-              </div>
-              <div class="input-field-box">
-                <label for="message">Message: </label>
-                <textarea
-                  class="input-field"
-                  id="message"
-                  placeholder="Your message.."
-                  name="message"
-                ></textarea>
-              </div>
-              <div class="input-field-box">
-                <button id="submit" type="submit">Submit</button>
-              </div>
-            </form>
+            </div>
+            <div class="footer-box footer-box-3">
+              <h2>Email us</h2>
+              <form
+                class="input-field-container"
+                action="https://formspree.io/f/mnnzeeez"
+                method="POST"
+              >
+                <div class="input-field-box">
+                  <label for="name"> Name: </label>
+                  <input
+                    class="input-field"
+                    autocomplete="off"
+                    id="name"
+                    placeholder="Your name.."
+                    type="text"
+                    name="name"
+                    required
+                  >
+                </div>
+                <div class="input-field-box">
+                  <label for="email"> Email: </label>
+                  <input
+                    class="input-field"
+                    autocomplete="off"
+                    id="email"
+                    placeholder="Your email.."
+                    type="email"
+                    name="email"
+                    required
+                  >
+                </div>
+                <div class="input-field-box">
+                  <label for="message">Message: </label>
+                  <textarea
+                    class="input-field"
+                    id="message"
+                    placeholder="Your message.."
+                    name="message"
+                  ></textarea>
+                </div>
+                <div class="input-field-box">
+                  <button id="submit" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
           <div class="connect-container section-container">
             <a
@@ -1244,7 +1268,7 @@
                 <h3>Instagram</h3>
                 <img
                   class="connect-box-img"
-                  src="./res/img/contacts/instagramc.png"
+                  src="./res/img/contacts/ic.webp"
                   alt="logo of instagram"
                 >
               </div>
@@ -1257,7 +1281,7 @@
                 <h3>TikTok</h3>
                 <img
                   class="connect-box-img"
-                  src="./res/img/contacts/tiktokc.png"
+                  src="./res/img/contacts/tc.webp"
                   alt="logo of tiktok"
                 >
               </div>
@@ -1270,18 +1294,18 @@
                 <h3>Facebook</h3>
                 <img
                   class="connect-box-img"
-                  src="./res/img/contacts/facebookc.png"
+                  src="./res/img/contacts/fbc.webp"
                   alt="logo of facebook"
                 >
               </div>
             </a>
-            <a target="_blank" href="https://twitter.com/TheNutronia">
+            <a target="_blank" href="https://x.com/TheNutronia">
               <div class="connect-box">
-                <h3>Twitter</h3>
+                <h3>X</h3>
                 <img
                   class="connect-box-img"
-                  src="./res/img/contacts/twitterc.png"
-                  alt="logo of twitter"
+                  src="./res/img/contacts/xc.webp"
+                  alt="logo of x"
                 >
               </div>
             </a>
@@ -1289,12 +1313,12 @@
         </div>
         <div id="copyright">
           <p>© 2025 TheNutronia</p>
-          <!--<p>
+          <p>
             Made by:
             <a target="_blank" href="https://github.com/Akino02"
               >Michal Adamek</a
             >
-          </p>-->
+          </p>
         </div>
       </footer>
     </div>
