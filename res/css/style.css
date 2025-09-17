@@ -131,7 +131,7 @@ header {
   width: 100%;
   border-radius: 50%;
 }*/
-.header-text > img{
+.header-text > img {
   max-width: 400px;
   width: 100%;
   border-radius: 50%;
@@ -707,6 +707,30 @@ footer {
   padding-right: 20px;
 }
 
+.offer-work-container {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-work-button {
+  padding: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+
+  color: rgb(0, 0, 0);
+
+  transition: ease-in-out 0.3s;
+}
+
+.offer-work-button:hover {
+  border: 2px solid rgb(142, 184, 110);
+  box-shadow: rgba(45, 45, 45, 0.3) 4px 3px 6px 0px;
+  transform: translateY(-5px) scale(1.05);
+}
+
 /**/
 
 /* FAQ section */
@@ -758,13 +782,24 @@ footer {
   line-height: 25px;
 }
 
-.faq-a-box > a{
-  color: rgb(0, 0, 0);
-  transition: ease-in-out 0.2s;
+.faq-a-box > p {
+  padding: 5px;
 }
 
-.faq-a-box > a:hover{
-  color: rgb(70, 70, 70);
+.faq-a-box > a {
+  padding: 10px;
+  background-color: rgb(218, 231, 191);
+  border: 1px solid rgb(149, 163, 123);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  transition: ease-in-out 0.3s;
+}
+
+.faq-a-box > a:hover {
+  background-color: rgb(250, 255, 239);
+  color: rgb(0, 0, 0);
+  border-radius: 12.5px;
+  box-shadow: rgba(45, 45, 45, 0.3) 4px 3px 6px 0px;
 }
 
 .faq-no-match {
@@ -983,7 +1018,7 @@ footer {
 }
 
 .freeres-text {
-  height: 125px;
+  height: 130px;
   overflow: auto;
   margin-bottom: 20px; /*TODO Risking*/
   text-align: justify;
@@ -1045,7 +1080,7 @@ footer {
   padding: 50px;
 }
 
-.contacts-container{
+.contacts-container {
   display: grid;
   grid-template-areas: "box1 box2 box3";
   grid-template-columns: 33%, 33%, 33%;
@@ -1053,13 +1088,13 @@ footer {
   padding: 80px 150px 80px 150px;
 }
 
-.footer-box-1{
+.footer-box-1 {
   grid-area: box1;
 }
-.footer-box-2{
+.footer-box-2 {
   grid-area: box2;
 }
-.footer-box-3{
+.footer-box-3 {
   grid-area: box3;
 }
 
@@ -1234,8 +1269,8 @@ a:link {
 @media screen and (max-width: 1400px) {
   .contacts-container {
     grid-template-areas:
-    "box2 box2"
-    "box1 box3";
+      "box2 box2"
+      "box1 box3";
     grid-template-columns: 50% 50%;
     padding: 80px 100px 80px 100px;
   }
@@ -1280,14 +1315,15 @@ a:link {
     width: 100%;
   }
 }
-/*responsive menu*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1110px) {
   #nav-container-wide {
     display: none;
   }
   .nav-container-compact-opener {
     display: flex;
   }
+}
+@media screen and (max-width: 900px) {
   .section-title {
     font-size: 25px;
   }
@@ -1296,9 +1332,9 @@ a:link {
   }
   .contacts-container {
     grid-template-areas:
-    "box2"
-    "box1"
-    "box3";
+      "box2"
+      "box1"
+      "box3";
     grid-template-columns: 100%;
     padding: 80px 0px 80px 0px;
   }

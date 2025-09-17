@@ -25,6 +25,8 @@ const langSwapper = document.getElementById("lang-box");
 let isLangMenuOpen = false;
 
 const user = "thenutronia";
+const subjectEN = "Excited to Start My Journey with You"
+const subjectCZ = "Jsem připraven/a začít svou cestu s vám"
 const domain = "gmail.com";
 const email = user + "@" + domain;
 const emailLink = `<a href="mailto:${email}">${email}</a>`;

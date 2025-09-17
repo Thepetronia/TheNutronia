@@ -3,12 +3,54 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <meta
+      name="description"
+      content="Poradenství v rostlinné stravě a životním stylu od dietoložky dietoložky a specialistky na medicínu životního stylu pro pro zdraví, energii a prevenci nemocí."
+    >
+    <meta
+      name="keywords"
+      content="certifikovaný výživový poradce nutriční terapeut, specialista na zdravý životní styl, výživový poradce pro rostlinnou stravu, individuální výživový plán, výživa podložená vědeckými poznatky, výživa pro více energie a lepší soustředění, výživa pro prevenci civilizačních chorob, protizánětlivá dieta, WFPB strava, dietolog pro rostlinnou stravu"
+    >
+
+    <meta name="robots" content="index, follow" >
+
+    <meta property="og:title" content="TheNutronia" >
+    <meta
+      property="og:description"
+      content="Poradenství v rostlinné stravě a životním stylu od dietoložky dietoložky a specialistky na medicínu životního stylu pro pro zdraví, energii a prevenci nemocí."
+    >
+    <meta
+      property="og:image"
+      content="https://thenutronia.com/res/img/logo/mti.webp"
+    >
+    <meta property="og:url" content="https://thenutronia.com" >
+    <meta property="og:type" content="website" >
+
+    <meta
+      name="twitter:card"
+      content="https://thenutronia.com/res/img/logo/mti.webp"
+    >
+    <meta name="twitter:title" content="TheNutronia" >
+    <meta
+      name="twitter:description"
+      content="Získejte energii, zdraví a prevenci nemocí díky rostlinné stravě s podporou certifikované dietoložky a specialistky na medicínu životního stylu."
+    >
+    <meta
+      name="twitter:image"
+      content="https://thenutronia.com/res/img/logo/logo_plain.webp"
+    >
+
     <title>TheNutronia</title>
     <link rel="stylesheet" href="../res/css/style.css" >
     <link
       rel="shortcut icon"
-      href="../res/img/small_page/favicon.ico"
+      href="../res/img/logo/favicon.ico"
       type="image/x-icon"
+    >
+    <link
+      rel="apple-touch-icon"
+      href="https://thenutronia.com/res/img/logo/logo_plain.webp"
     >
   </head>
   <body>
@@ -18,29 +60,33 @@
           <div class="header-img-shadow">
             <div class="header-title">
               <div class="header-text">
-                <a href="#">
+                <img
+                  src="../res/img/logo/logo_c_f_btw.webp"
+                  alt="logo thenutronia"
+                >
+                <!--<a href="#">
                   <h1>
                     <span class="header-small-text"> the </span>
                     Nutronia
                   </h1>
-                </a>
+                </a>-->
               </div>
             </div>
           </div>
           <img
             class="header-img header-img-first"
             src="../res/img/title/compressed/picture1_smaller.webp"
-            alt="first image"
+            alt="prvni image"
           >
           <img
             class="header-img"
             src="../res/img/title/compressed/picture2_smaller.webp"
-            alt="second image"
+            alt="druhy image"
           >
           <img
             class="header-img"
             src="../res/img/title//compressed/picture3_smaller.webp"
-            alt="third image"
+            alt="treti image"
           >
           <div class="nav-imgs-container">
             <a class="nav-img-button nav-img-button-first"></a>
@@ -57,13 +103,13 @@
           <div class="nav-box-wide">Co nabízím</div>
         </a>
         <a href="#faq">
-          <div class="nav-box-wide">Časté dotazy</div>
+          <div class="nav-box-wide">Často kladené otázky</div>
         </a>
         <a href="#testimonial">
-          <div class="nav-box-wide">Zpětné vazby</div>
+          <div class="nav-box-wide">Reference</div>
         </a>
-        <a href="#recipes">
-          <div class="nav-box-wide">Recepty</div>
+        <a href="#freeres">
+          <div class="nav-box-wide">Užitečné zdroje zdarma</div>
         </a>
         <a href="#contacts">
           <div class="nav-box-wide">Kontakty</div>
@@ -89,17 +135,17 @@
             </li>
             <li>
               <a href="#faq">
-                <div class="nav-box-compact">Časté dotazy</div>
+                <div class="nav-box-compact">Často kladené otázky</div>
               </a>
             </li>
             <li>
               <a href="#testimonial">
-                <div class="nav-box-compact">Zpětné vazby</div>
+                <div class="nav-box-compact">Reference</div>
               </a>
             </li>
             <li>
-              <a href="#recipes">
-                <div class="nav-box-compact">Recepty</div>
+              <a href="#freeres">
+                <div class="nav-box-compact">Užitečné zdroje zdarma</div>
               </a>
             </li>
             <li>
@@ -111,13 +157,20 @@
         </nav>
       </div>
       <div class="main-body-container">
-        <div class="lang-container">
-          <a href="../index.html">
-            <div class="lang-button">ENG</div>
-          </a>
-          <a href="#">
-            <div class="lang-button active">CZE</div>
-          </a>
+        <div id="lang-container">
+          <img
+            id="lang-box-opener"
+            src="../res/img/svg/translate.svg"
+            alt="preklad"
+          >
+          <div id="lang-box">
+            <a href="../index.html">
+              <div class="lang-button">ENG</div>
+            </a>
+            <a href="#">
+              <div class="lang-button active">CZE</div>
+            </a>
+          </div>
         </div>
         <section id="about">
           <div class="section-content">
@@ -127,85 +180,87 @@
             <div class="about-container">
               <div class="about-grid-text-1 about-grid-text">
                 <p>
-                  My name is Petra Dohnalova, and I’m a
-                  <b>Board-certified Registered Dietitian Nutritionist (RDN)</b>
-                  and a <b>Lifestyle Medicine Practitioner</b>. With extensive
-                  experience working in clinics and hospitals, I now focus on
-                  providing <b>virtual nutrition counseling</b> and
-                  <b>online group classes</b> designed to fit seamlessly into
-                  your busy lifestyle.
+                  Jmenuji se Petra Dohnalová a jsem nutriční terapeutka s
+                  mezinárodní certifikací (Registered Dietitian Nutritionist –
+                  RDN) a specialistka na medicínu životního stylu. Po dlouholeté
+                  praxi v klinikách a nemocnicích se nyní zaměřuji na
+                  poskytování individuálních online konzultací a skupinových
+                  kurzů výživy, které se snadno přizpůsobí vašemu nabitému
+                  životnímu stylu.
                 </p>
                 <p>
-                  You might be wondering: What exactly is a registered
-                  dietitian? An RDN is a board-certified food and nutrition
-                  expert who provides personalized, evidence-based dietary
-                  guidance to improve health and manage medical conditions.
+                  Možná vás napadá: co přesně je registrovaný dietolog/nutriční
+                  terapeut (RDN)? Je to certifikovaný odborník na výživu, který
+                  poskytuje personalizované a vědecky podložené doporučení pro
+                  zlepšení zdraví a zvládání zdravotních obtíží.
                 </p>
               </div>
               <div class="about-grid-img-1 about-grid-imgs">
                 <img
                   class="about-grid-img about-grid-wide right-img"
                   src="../res/img/about/compressed/picture_01_about_smaller.webp"
-                  alt="dietitian petra looking professional in a white coat"
+                  alt="dietolozka petra profesionalne v bilem plasti"
                 >
               </div>
               <div class="about-grid-text-2 about-grid-text">
                 <p>
-                  Now that we’ve got that covered, here’s a little more about me
-                  — I’m a passionate foodie. Why does that matter? Because
-                  working with someone who loves food means your meals will
-                  never be boring. I explore global cuisines for fun, so I know
-                  how to make healthy eating delicious, satisfying, and visually
-                  appealing. If you’re a fellow foodie, you know exactly what I
-                  mean.
+                  A teď trochu víc o mně — jsem velká milovnice jídla. Proč je
+                  to důležité? Protože spolupráce s někým, kdo jídlo opravdu
+                  miluje, znamená, že vaše stravování nebude nikdy nudné. Ráda
+                  zkoumám světové kuchyně, takže vím, jak udělat zdravé jídlo
+                  chutné, syté a lákavé na pohled. Pokud jste také „foodie“,
+                  přesně víte, o čem mluvím.
                 </p>
                 <p>
-                  I’m also a lifelong athlete. I may not have competed in the
-                  Olympics, but I’ve stayed active through all of life’s ups and
-                  downs, and I know firsthand how movement supports not only
-                  physical health but also mental well-being.
+                  Jsem také celoživotní sportovkyně. Možná jsem nikdy
+                  nesoutěžila na olympiádě, ale pohyb byl vždy součástí mého
+                  života, ať už jsem procházela čímkoli. Z vlastní zkušenosti
+                  vím, že pohyb nepodporuje jen fyzické zdraví, ale i psychickou
+                  pohodu.
                 </p>
               </div>
               <div class="about-grid-img-2 about-grid-imgs">
                 <img
                   class="about-grid-img about-grid-short left-img"
                   src="../res/img/about/compressed/picture_02_about_smaller.webp"
-                  alt="dietitian petra holding an apple and offering help with nutrition"
+                  alt="dietolozka petra s jablkem, nabizi pomoc s vyzivou"
                 >
               </div>
               <div class="about-grid-text-3 about-grid-text">
                 <p>
-                  I share this because I don’t just teach healthy living — I
-                  live it. After years of learning, practicing, and refining
-                  what works, I’m here to guide you toward better health and
-                  well-being without all the guesswork. It doesn’t have to take
-                  a lifetime, and you don’t have to do it alone — I’ll help you
-                  work smarter, not harder.
+                  Sdílím to proto, že zdravý životní styl jen neučím — já ho i
+                  žiju. Po letech studia, praxe a hledání toho, co skutečně
+                  funguje, jsem tady od toho, abych vás provedla cestou ke
+                  zdraví a pohodě bez zbytečného tápání. Nemusí to trvat celý
+                  život a nemusíte na to být sami — pomůžu vám pracovat
+                  chytřeji, ne tvrději.
                 </p>
                 <p>
-                  Are you a busy professional who feels exhausted, overwhelmed,
-                  or stuck with early health issues like high blood pressure,
-                  prediabetes, or low energy? Do you already have chronic
-                  conditions that you are trying to manage? You want to feel
-                  better, but complicated diets or extreme lifestyle changes
-                  don’t fit your life. I get it — and I’m here to help.
+                  Jste zaneprázdněný profesionál, který se cítí vyčerpaný,
+                  zahlcený nebo už řeší první zdravotní problémy, jako je vysoký
+                  krevní tlak, prediabetes nebo nízká energie? Nebo už žijete s
+                  chronickým onemocněním, které se snažíte zvládnout? Chcete se
+                  cítit lépe, ale složité diety nebo extrémní změny životního
+                  stylu do vašeho života prostě nezapadají? Rozumím vám — a
+                  právě proto jsem tady.
                 </p>
                 <p>
-                  I specialize in a <b>plant-forward approach</b> that fits your
-                  lifestyle — no pressure to go fully vegan, just flexible,
-                  practical steps that increase your energy, improve your
-                  health, and are sustainable for you.
+                  Specializuji se na stravování založené převážně na rostlinných
+                  potravinách, které se přizpůsobí vašemu životnímu stylu — bez
+                  tlaku stát se úplným veganem. Jen flexibilní a praktické
+                  kroky, které vám dodají více energie, zlepší vaše zdraví a
+                  hlavně budou dlouhodobě udržitelné.
                 </p>
               </div>
               <div class="about-grid-img-3 about-grid-imgs">
                 <img
                   class="about-grid-img about-grid-wide right-img"
                   src="../res/img/about/compressed/picture_03_about_smaller.webp"
-                  alt="dietitian petra in real life"
+                  alt="petra v beznem zivote"
                 >
               </div>
               <div class="about-grid-text-4 about-grid-text">
-                <h3>Here’s what I can do for you:</h3>
+                <h3>Zde je, co pro vás mohu udělat:</h3>
                 <ul class="about-grid-text-notes">
                   <li>
                     <span>
@@ -213,12 +268,13 @@
                         width="30"
                         height="30"
                         src="../res/img/svg/Check.svg"
-                        alt="check"
+                        alt="checkmark"
                       >
                     </span>
                     <p>
-                      Show you how to eat more plants and whole foods in ways
-                      that fit your busy schedule and taste preferences.
+                      Ukážu vám, jak zařadit více rostlinných a celozrnných
+                      potravin tak, aby to zapadalo do vašeho nabitého programu
+                      i chuťových preferencí.
                     </p>
                   </li>
                   <li>
@@ -227,13 +283,13 @@
                         width="30"
                         height="30"
                         src="../res/img/svg/Check.svg"
-                        alt="check"
+                        alt="checkmark"
                       >
                     </span>
                     <p>
-                      Support you with lifestyle medicine strategies —
-                      nutrition, sleep, stress, movement, and more — because
-                      your health depends on the whole picture.
+                      Podpořím vás strategiemi medicíny životního stylu —
+                      výživa, spánek, stres, pohyb a další — protože vaše zdraví
+                      závisí na celkovém obrazu.
                     </p>
                   </li>
                   <li>
@@ -242,13 +298,14 @@
                         width="30"
                         height="30"
                         src="../res/img/svg/Check.svg"
-                        alt="check"
+                        alt="checkmark"
                       >
                     </span>
                     <p>
-                      Help you reverse or manage chronic conditions like type 2
-                      diabetes, hypertension, and high cholesterol with
-                      personalized, realistic plans.
+                      Pomohu vám zmírnit nebo zvládat chronická onemocnění, jako
+                      je cukrovka 2. typu, vysoký krevní tlak nebo zvýšený
+                      cholesterol, prostřednictvím osobních a realistických
+                      plánů.
                     </p>
                   </li>
                   <li>
@@ -257,13 +314,13 @@
                         width="30"
                         height="30"
                         src="../res/img/svg/Check.svg"
-                        alt="check"
+                        alt="checkmark"
                       >
                     </span>
                     <p>
-                      Guide young adults transitioning to vegan or plant-based
-                      diets, making sure they get all the nutrients they need
-                      confidently.
+                      Provedu mladé dospělé při přechodu na veganskou nebo
+                      rostlinnou stravu a zajistím, aby měli jistotu, že
+                      dostávají všechny potřebné živiny.
                     </p>
                   </li>
                   <li>
@@ -272,13 +329,13 @@
                         width="30"
                         height="30"
                         src="../res/img/svg/Check.svg"
-                        alt="check"
+                        alt="checkmark"
                       >
                     </span>
                     <p>
-                      Work with those managing long-term health issues to
-                      improve quality of life through compassionate, achievable
-                      strategies.
+                      Mohu pracovat s těmi, kteří se potýkají s dlouhodobými
+                      zdravotními obtížemi, a pomohu jim zlepšit kvalitu života
+                      prostřednictvím soucitných a uskutečnitelných strategií.
                     </p>
                   </li>
                 </ul>
@@ -287,19 +344,19 @@
                 <img
                   class="about-grid-img about-grid-short left-img"
                   src="../res/img/about/compressed/picture_04_about_smaller.webp"
-                  alt="petra sitting on the floor in a dress"
+                  alt="petra v satech"
                 >
               </div>
               <div class="about-grid-text-5 about-grid-text">
                 <p>
-                  All my services are virtual — individual counseling and group
-                  classes — so you get expert support wherever you are, on your
-                  schedule.
+                  Všechny moje služby jsou online — individuální poradenství i
+                  skupinové kurzy — takže získáte odbornou podporu odkudkoli a
+                  podle svého času.
                 </p>
                 <p>
-                  If you’re ready to stop feeling tired and overwhelmed and
-                  start feeling vibrant, energized, and in control of your
-                  health, I’m ready to help you make it happen.
+                  Pokud jste připraveni přestat se cítit unavení a zahlcení a
+                  místo toho začít žít s vitalitou, energií a pocitem kontroly
+                  nad svým zdravím, jsem připravena vám s tím pomoci.
                 </p>
               </div>
             </div>
@@ -308,37 +365,37 @@
         <section id="offer">
           <div class="section-content">
             <div class="offer-title section-title">
-              <h2>What I offer</h2>
+              <h2>Co nabízím</h2>
             </div>
             <div class="offer-container section-container">
               <div class="offer-big-box-container">
                 <div class="offer-box">
                   <p>
-                    I provide personalized <i>nutrition counseling</i> and
-                    <i>lifestyle coaching</i> designed to fit your busy life and
-                    health goals. Whether you want more energy, better health,
-                    to prevent, reverse, or manage medical conditions, I’m here
-                    to guide you every step of the way. My approach not only
-                    supports your wellness but often brings
-                    <i>lasting weight loss</i> and <i>renewed energy</i> as a
-                    natural bonus.
+                    Poskytuji individuální poradenství v oblasti výživy a
+                    životního stylu, které je přizpůsobeno vašemu nabitému
+                    programu a zdravotním cílům. Ať už chcete získat více
+                    energie, zlepšit zdraví, předcházet zdravotním problémům,
+                    odvrátit nebo je efektivně zvládat, jsem tu, abych vás
+                    provázela každým krokem. Můj přístup podporuje vaše celkové
+                    zdraví a často přináší i trvalou redukci váhy a obnovenou
+                    energii jako přirozený bonus.
                   </p>
                 </div>
               </div>
               <div class="offer-info">
-                <h3>Virtual Individual Nutrition Counseling</h3>
+                <h3>Individuální virtuální poradenství v oblasti výživy</h3>
                 <ul class="offer-grid-notes">
                   <li>
                     <span>
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      One-on-one sessions tailored to your unique needs,
-                      preferences, and goals.
+                      Jednotlivé konzultace přizpůsobené vašim jedinečným
+                      potřebám, preferencím a cílům.
                     </p>
                   </li>
                   <li>
@@ -346,12 +403,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Learn everything from A to Z about plant-forward nutrition
-                      that works for <i>you</i>.
+                      Naučíte se vše od A do Z o rostlinně orientované výživě,
+                      která funguje právě pro vás.
                     </p>
                   </li>
                   <li>
@@ -359,12 +416,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Support with lifestyle habits like stress management,
-                      sleep, and physical activity to help you feel your best.
+                      Podpora při zlepšování životního stylu – zvládání stresu,
+                      kvalitní spánek a pohyb – aby se vám dařilo co nejlépe.
                     </p>
                   </li>
                   <li>
@@ -372,13 +429,13 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Evidence-based guidance to improve or even reverse
-                      early-stage chronic conditions or manage existing
-                      conditions.
+                      Důkazy podložené rady, které mohou zlepšit nebo dokonce
+                      zvrátit počáteční chronické onemocnění či pomoci zvládat
+                      stávající zdravotní problémy.
                     </p>
                   </li>
                   <li>
@@ -386,12 +443,13 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Ideal for professionals wanting to boost energy and
-                      wellness without drastic diet changes.
+                      Důkazy podložené rady, které mohou zlepšit nebo dokonce
+                      zvrátit počáteční chronické onemocnění či pomoci zvládat
+                      stávající zdravotní problémy.
                     </p>
                   </li>
                   <li>
@@ -399,13 +457,13 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Recommended for specific medical conditions or focused
-                      goals (e.g., weight loss, race preparation, eating
-                      disorders, etc.).
+                      Doporučeno pro specifické zdravotní stavy nebo konkrétní
+                      cíle (např. hubnutí, příprava na závody, poruchy příjmu
+                      potravy apod.).
                     </p>
                   </li>
                   <li>
@@ -413,12 +471,13 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Perfect if you’re new to plant-based eating—I’ll help you
-                      transition confidently and at your own pace.
+                      Doporučeno pro specifické zdravotní stavy nebo konkrétní
+                      cíle (např. hubnutí, příprava na závody, poruchy příjmu
+                      potravy apod.).
                     </p>
                   </li>
                   <li>
@@ -426,28 +485,28 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Works best when combined with group classes for extra
-                      motivation and community.
+                      Nejefektivnější v kombinaci s skupinovými kurzy pro
+                      dodatečnou motivaci a pocit komunity.
                     </p>
                   </li>
                 </ul>
-                <h3>Virtual Group Classes & Workshops</h3>
+                <h3>Virtuální skupinové kurzy a workshopy</h3>
                 <ul class="offer-box-notes">
                   <li>
                     <span>
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Interactive group sessions where you’ll connect with
-                      others facing similar challenges.
+                      Interaktivní skupinové lekce, kde se propojíte s lidmi,
+                      kteří řeší podobné výzvy.
                     </p>
                   </li>
                   <li>
@@ -455,12 +514,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Enjoy peer support that motivates and encourages you to
-                      stay committed.
+                      Vychutnejte si podporu vrstevníků, která motivuje a pomáhá
+                      zůstat na cestě ke svému cíli.
                     </p>
                   </li>
                   <li>
@@ -468,13 +527,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Packed with practical tips and valuable learning—more
-                      general and slightly less interactive than individual
-                      sessions.
+                      Plné praktických tipů a cenných informací – obecnější a
+                      mírně méně interaktivní než individuální konzultace.
                     </p>
                   </li>
                   <li>
@@ -482,12 +540,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Learn how to boost energy, improve health, and build
-                      sustainable habits within a supportive community.
+                      Naučíte se, jak zvýšit energii, zlepšit zdraví a budovat
+                      udržitelné návyky v podpůrné komunitě.
                     </p>
                   </li>
                   <li>
@@ -495,29 +553,27 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Great for motivation, accountability, and sharing
-                      experiences.
+                      Skvělé pro motivaci, zodpovědnost a sdílení zkušeností.
                     </p>
                   </li>
                 </ul>
-                <h3>Corporate Nutrition & Wellness Services</h3>
+                <h3>Firemní služby v oblasti výživy a wellness</h3>
                 <ul class="offer-grid-notes">
                   <li>
                     <span>
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Engaging virtual or in-person sessions tailored for
-                      companies, perfect for wellness days or team-building
-                      events.
+                      Zajímavé virtuální nebo osobní lekce přizpůsobené pro
+                      firmy, ideální na wellness dny nebo teambuildingové akce.
                     </p>
                   </li>
                   <li>
@@ -525,12 +581,13 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Educational workshops on plant-forward nutrition and
-                      lifestyle medicine designed to meet your team’s needs.
+                      Vzdělávací workshopy o rostlinně orientované výživě a
+                      životním stylu navržené tak, aby vyhovovaly potřebám
+                      vašeho týmu.
                     </p>
                   </li>
                   <li>
@@ -538,12 +595,12 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Help your employees improve health, energy, and
-                      productivity with practical, evidence-based guidance.
+                      Pomoc zaměstnancům zlepšit zdraví, energii a produktivitu
+                      díky praktickým a vědecky podloženým doporučením.
                     </p>
                   </li>
                   <li>
@@ -551,27 +608,29 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/Angle-double-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Flexible formats to fit your company’s schedule and goals.
+                      Flexibilní formáty přizpůsobené harmonogramu a cílům vaší
+                      firmy.
                     </p>
                   </li>
                 </ul>
-                <h3>Virtual Format: Flexible & Convenient</h3>
+                <h3>Virtuální formát: flexibilní a pohodlný</h3>
                 <ul class="offer-box-notes">
                   <li>
                     <span>
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      All coaching and classes are online (unless requested
-                      otherwise), so you can join from anywhere, anytime.
+                      Všechny konzultace a kurzy probíhají online (pokud není
+                      požadováno jinak), takže se můžete připojit odkudkoli a
+                      kdykoli.
                     </p>
                   </li>
                   <li>
@@ -579,15 +638,20 @@
                       <img
                         class="offer-grid-svg"
                         src="../res/img/svg/arrow-right.svg"
-                        alt="arrow aiming to right"
+                        alt="sipka smerujici doprava"
                       >
                     </span>
                     <p>
-                      Perfect for busy schedules and those who prefer the
-                      comfort of home.
+                      Ideální pro nabité programy a pro ty, kteří preferují
+                      pohodlí domova.
                     </p>
                   </li>
                 </ul>
+                <div class="offer-work-container">
+                  <a class="offer-work-button" href="../res/doc/services.pdf">
+                    Do toho společně
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -595,85 +659,69 @@
         <section id="faq">
           <div class="section-content">
             <div class="faq-title section-title">
-              <h2>FAQ</h2>
+              <h2>Často kladené otázky</h2>
             </div>
             <div class="faq-container section-container">
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  What exactly does a Registered Dietitian Nutritionist (RDN)
-                  do, and how can you help me?
+                  Co vlastně dělá nutriční terapeut / dietolog (Registered
+                  Dietitian Nutritionist – RDN) a jak mi můžete pomoci?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Great question! As a
-                    <b>Board-certified Registered Dietitian Nutritionist</b> and
-                    <b>Lifestyle Medicine</b> practitioner, I’m an expert in
-                    food and nutrition and lifestyle medicine with
-                    evidence-based training to guide you through personalized
-                    changes that fit your life. I don’t just hand you a diet
-                    plan — I help you figure out what works for you, your body,
-                    and your busy life. Whether you want more energy, to manage
-                    a health condition, or simply feel better day to day, I’ll
-                    guide you step-by-step with flexible, realistic changes that
-                    feel doable—not overwhelming.
+                    Skvělá otázka! Jako certifikovaná nutriční terapeutka a
+                    odbornice na životní styl vám díky znalostem z těchto
+                    oblastí pomohu s osobními změnami, které se hodí do vašeho
+                    života. Nedostanete ode mě jen jídelníček – společně
+                    zjistíme, co funguje pro vás, vaše tělo a váš každodenní
+                    program. Ať už chcete mít více energie, zvládat zdravotní
+                    potíže, nebo se prostě cítit lépe každý den, povedu vás krok
+                    za krokem pomocí flexibilních a realistických změn, které
+                    jsou proveditelné, ne vyčerpávající.
                   </p>
-                  <h3>Registered Dietitians:</h3>
+                  <h3>
+                    Dietologové/Nutriční terapeuti (Registered Dietitian
+                    Nutritionist – RDN):
+                  </h3>
                   <ul>
                     <li>
                       <p>
-                        Have completed a <b>college degree</b> in nutrition,
-                        dietetics, or a related field.
+                        Mají ukončené vysokoškolské vzdělání v oboru dietologie,
+                        výživa, nutriční terapie nebo příbuzném oboru
                       </p>
                     </li>
                     <li>
-                      <p>
-                        Have completed <b>supervised practical training</b>.
-                      </p>
+                      <p>Absolvují povinnou odbornou praxi pod dohledem.</p>
                     </li>
                     <li>
                       <p>
-                        Have passed a <b>national exam</b> to earn the RD
-                        credential.
+                        Složí celostátní zkoušku pro získání profesního
+                        oprávnění.
                       </p>
                     </li>
                     <li>
-                      <p>
-                        Keep their knowledge and licensure up to date through
-                        lifelong <b>ongoing education</b>.
-                      </p>
+                      <p>Průběžně si doplňují vzdělání a udržují odbornost.</p>
+                    </li>
+                    <li>
+                      <p>Posuzují výživové potřeby a zdravotní cíle klientů.</p>
                     </li>
                     <li>
                       <p>
-                        Assess people’s <b>nutritional needs</b> and health
-                        goals.
+                        Poskytují individuální poradenství a nutriční terapii
+                        při onemocněních (např. cukrovka, srdeční choroby,
+                        onemocnění ledvin).
                       </p>
                     </li>
                     <li>
-                      <p>
-                        Provide
-                        <b>
-                          personalized nutrition advice and medical nutrition
-                          therapy
-                        </b>
-                        for managing diseases (like diabetes, heart disease, or
-                        kidney problems).
-                      </p>
+                      <p>Pomáhají s redukcí váhy a se zdravým stravováním.</p>
+                    </li>
+                    <li>
+                      <p>Radí při potravinových alergiích a intolerancích.</p>
                     </li>
                     <li>
                       <p>
-                        Help with <b>weight management</b> and healthy eating.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Guide patients with
-                        <b>food allergies or intolerances</b>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Work in hospitals, clinics, community health programs,
-                        research, food service, or private practices.
+                        Působí v nemocnicích, klinikách, veřejném zdravotnictví,
+                        výzkumu, stravovacích službách nebo soukromé praxi.
                       </p>
                     </li>
                   </ul>
@@ -681,214 +729,245 @@
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  What is a Lifestyle Medicine Practitioner?
+                  Co je medicína životního stylu?
+                </summary>
+                <div class="faq-a-box">
+                  <a target="_blank" href="../res/doc/lifestyle_medicine.pdf">
+                    Čti
+                  </a>
+                </div>
+              </details>
+              <details class="faq-box">
+                <summary class="faq-q-box">
+                  Co je to „Lifestyle Medicine Practitioner“ (praktik medicíny
+                  životního stylu)?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    As a
-                    <i
-                      >Diplomate of the American College of Lifestyle
-                      Medicine</i
-                    >
-                    (DipACLM), I’m board-certified to help prevent, treat, and
-                    in some cases reverse chronic diseases through
-                    evidence-based lifestyle changes. We’ll work together on all
-                    six pillars of lifestyle medicine — nutrition, physical
-                    activity, restorative sleep, stress management, avoidance of
-                    risky substances, and positive social connections — which
-                    are scientifically proven to work in synergy to improve
-                    health, boost energy, and enhance quality of life.
+                    Jako držitelka certifikace Diplomate of the American College
+                    of Lifestyle Medicine (DipACLM) jsem kvalifikovaná pomáhat s
+                    prevencí, léčbou a v některých případech i se zvrácením
+                    chronických onemocnění prostřednictvím změn životního stylu
+                    podložených vědeckými důkazy. Společně se zaměříme na všech
+                    šest pilířů medicíny životního stylu — výživu, pohyb,
+                    kvalitní spánek, zvládání stresu, vyhýbání se rizikovým
+                    látkám a pozitivní sociální vztahy. Tyto oblasti fungují v
+                    synergii a prokazatelně zlepšují zdraví, zvyšují energii a
+                    kvalitu života.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  I’m exhausted and overwhelmed. How can nutrition and lifestyle
-                  medicine really help me?
+                  Jsem vyčerpaný/á a přetížený/á. Jak mi může výživa a medicína
+                  životního stylu skutečně pomoci?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    I hear you — feeling tired all the time is frustrating and
-                    can make even simple tasks feel impossible. That’s why I
-                    don’t just focus on food alone. As a
-                    <b>Lifestyle Medicine Practitioner</b> with a Master’s in
-                    <b>Integrative Nutrition</b>, I look at all the pieces that
-                    affect your well-being: nutrition, sleep, stress, movement,
-                    and your support system. When we address these together,
-                    you’ll start noticing real shifts in your energy and mood.
-                    You don’t have to make extreme changes or go 100% vegan;
-                    small, sustainable steps tailored to your life make the
-                    biggest difference.
+                    Rozumím vám — být neustále unavený je frustrující a i běžné
+                    úkoly pak působí náročně. Proto se nezaměřuji jen na jídlo.
+                    Jako odbornice na medicínu životního stylu s magisterským
+                    vzděláním v integrativní výživě se dívám na všechny oblasti,
+                    které ovlivňují vaši pohodu: výživu, spánek, stres, pohyb a
+                    také podpůrné prostředí. Když je propojíme, začnete vnímat
+                    reálné změny v energii i náladě. Nemusíte dělat extrémní
+                    kroky ani být 100% vegan — největší rozdíl přinášejí malé a
+                    udržitelné kroky šité na míru vašemu životu.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  I have a chronic health condition that’s been around for
-                  years. Can you help me improve my quality of life?
+                  Mám chronické onemocnění, které mě trápí už roky. Můžete mi
+                  pomoci zlepšit kvalitu života?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Yes. While long-standing conditions may not always be
-                    completely reversible, there’s so much we can do to improve
-                    how you feel day-to-day and boost your quality of life. I
-                    take a compassionate, realistic approach that combines
-                    <b>plant-forward nutrition</b> with lifestyle medicine
-                    strategies customized to your unique needs. Together, we’ll
-                    focus on achievable changes that support your health,
-                    energy, and well-being — so you’re not just managing, but
-                    thriving.
+                    Ano. Dlouhodobá onemocnění nemusí být vždy úplně vratná, ale
+                    i tak existuje mnoho možností, jak zlepšit vaši každodenní
+                    pohodu a kvalitu života. Volím laskavý a realistický
+                    přístup, který spojuje rostlinně orientovanou stravu se
+                    strategiemi medicíny životního stylu přizpůsobenými vašim
+                    potřebám. Zaměříme se na dosažitelné změny, které podpoří
+                    vaše zdraví, energii a celkovou pohodu — abyste svůj život
+                    nejen zvládali, ale opravdu si ho užívali.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  Do I have to go 100% vegan to work with you? I still eat meat,
-                  eggs, and dairy.
+                  Musím být 100% vegan, když s vámi budu spolupracovat? Pořád
+                  jím maso, vejce a mléčné výrobky.
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Not at all. I specialize in a <b>plant-forward approach</b>,
-                    which means plants are the focus, but you don’t have to cut
-                    out animal products completely. This way, you can make
-                    healthier choices that fit your tastes and lifestyle—without
-                    feeling restricted or stressed about being “perfect”.
+                    Vůbec ne. Specializuji se na „plant-forward“ přístup, tedy
+                    stravování, kde mají rostliny hlavní roli, ale nemusíte
+                    úplně vyřadit živočišné produkty. Můžete pouze dělat
+                    zdravější volby, které odpovídají vašim chutím a životnímu
+                    stylu — bez pocitu omezení nebo tlaku na dokonalost.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  I want to try a plant-based or vegan diet but don’t know where
-                  to start. Can you help?
+                  Chci zkusit rostlinnou nebo veganskou stravu, ale nevím, kde
+                  začít. Pomůžete mi?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Absolutely! Transitioning to a plant-based lifestyle can
-                    feel confusing or overwhelming, especially with so much
-                    conflicting information out there. I’m a passionate foodie
-                    who loves exploring global cuisines, so I’ll help you
-                    discover meals that are not only nutritious but delicious
-                    and exciting. I’ll guide your transition to an upgraded
-                    style of eating from A to Z to make sure you get all the
-                    nutrients you need and help you build confidence in your new
-                    lifestyle without pressure to be perfect.
+                    Rozhodně! Přechod na rostlinnou stravu může působit matoucím
+                    nebo zahlcujícím dojmem, zvlášť když je kolem tolik
+                    protichůdných informací. Sama jsem nadšenec do jídla a
+                    miluji objevování světových kuchyní, takže vám pomohu najít
+                    jídla, která budou nejen výživná, ale i chutná a pestrá.
+                    Provedu vás změnou stravování od A do Z, abyste měli všechny
+                    potřebné živiny a cítili se jistě ve svém novém stylu bez
+                    tlaku být perfektní.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  I’m young and thinking about going vegan but I am/my parents
-                  are worried about missing nutrients. Can you help me?
+                  Jsem mladý/á a uvažuji o veganství, ale já/rodiče mám/mají
+                  obavy z nedostatku živin. Pomůžete mi?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Yes! I also specialize in guiding young adults new to vegan
-                    or plant-based eating to get all the nutrients they need
-                    safely and confidently, without confusion or overwhelm. I’ve
-                    walked this path myself — and learned the hard way — so you
-                    can skip the confusion and start thriving from day one.
+                    Ano! Specializuji se také na pomoc mladým lidem, kteří
+                    začínají s veganskou nebo rostlinnou stravou, aby měli
+                    jistotu, že přijímají všechny potřebné živiny bezpečně a bez
+                    zmatků. Sama jsem si tím prošla — a často metodou pokus–omyl
+                    — takže vám ušetřím nejistotu a pomůžu vám začít prosperovat
+                    hned od začátku.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  How do your virtual sessions work? Can I fit this into my busy
-                  schedule?
+                  Jak fungují vaše virtuální konzultace? Vejde se to do mého
+                  nabitého programu?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Yes! All my counseling and group classes are 100% virtual
-                    and designed with busy professionals in mind. You get
-                    flexible, personalized support whenever and wherever it
-                    works for you — no wasted time, no unnecessary hassle.
+                    Ano! Všechny konzultace i skupinové kurzy probíhají online a
+                    jsou navrženy tak, aby vyhovovaly lidem s vytíženým
+                    programem. Dostanete flexibilní a osobní podporu kdykoliv a
+                    odkudkoliv — bez ztráty času a zbytečných komplikací.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  Why choose you instead of trying to figure all this out on my
-                  own?
+                  Proč bych měla/měl zvolit vás místo toho, abych si vše
+                  zkoušela/zjišťoval/a sama?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    I’ve been exactly where you are — overwhelmed by health
-                    advice and tired of trial and error. With my combination of
-                    credentials (RDN, Lifestyle Medicine Diplomate, Integrative
-                    Nutrition MS), years of clinical experience, and a passion
-                    for real food and movement, I bring a whole-person approach
-                    that simplifies your journey. You don’t have to do this
-                    alone or “go hard” to see results. I’ll help you make
-                    smarter, sustainable choices that lead to real, lasting
-                    improvements in your energy and health.
+                    Sama jsem byla na vašem místě — zahlcená radami o zdraví a
+                    unavená z pokusů a omylů. Díky kombinaci mé kvalifikace
+                    (RDN, Lifestyle Medicine Diplomate, MSc v integrativní
+                    výživě), roky klinické praxe a nadšení pro skutečné jídlo a
+                    pohyb nabízím komplexní přístup, který vám cestu výrazně
+                    usnadní. Nemusíte na to být sami ani jít „na doraz“, abyste
+                    viděli výsledky. Pomůžu vám činit chytřejší a udržitelné
+                    volby, které přinesou skutečné a trvalé zlepšení energie i
+                    zdraví.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  What makes your approach different from other dietitians or
-                  nutrition coaches?
+                  V čem se váš přístup liší od jiných nutričních terapeutů nebo
+                  výživových koučů?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    I combine clinical expertise with a real-life approach —
-                    backed by credentials like being Board-certified, a
-                    Lifestyle Medicine Diplomate, and holding a Master’s in
-                    Integrative Nutrition. Plus, I’m a fellow busy professional
-                    and lifelong athlete who loves food. I get how hard it is to
-                    make health a priority, and I focus on creating sustainable
-                    habits that energize you, without guilt or burnout.
+                    Spojuji klinickou odbornost s realistickým a praktickým
+                    přístupem — mám certifikace (Board-certified, Lifestyle
+                    Medicine Diplomate, MSc v integrativní výživě), ale zároveň
+                    jsem i vytížená profesionálka a celoživotní sportovkyně,
+                    která miluje jídlo. Chápu, jak těžké je upřednostnit zdraví,
+                    a proto se zaměřuji na udržitelné návyky, které vám dodají
+                    energii bez pocitu viny či vyhoření.
+                  </p>
+                  <p>
+                    Mnozí nutriční terapeuti absolvují pouze tříměsíční kurz o
+                    výživě, který jim poskytne základní přehled o tématech
+                    spojených s výživou. Já mám za sebou téměř deset let
+                    vysokoškolského studia, během něhož jsem se učila do hloubky
+                    rozumět lidskému tělu a metabolismu prostřednictvím oborů,
+                    jako je anatomie, fyziologie, organická chemie,
+                    mikrobiologie a další. Dále jsem musela složit náročné
+                    akreditační a licenční zkoušky, které jsou celostátně
+                    uznávané ve Spojených státech. Je jen na vás, s jakým typem
+                    profesionála se rozhodnete spolupracovat.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  How soon will I see results?
+                  Za jak dlouho uvidím výsledky?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    While everyone’s journey is unique, many clients notice more
-                    energy, better mood, and positive health changes within 8-12
-                    weeks of making manageable lifestyle shifts. I focus on
-                    creating habits that last, so your improvements stick
-                    long-term.
+                    Každý má svou vlastní cestu, ale mnoho klientů si všimne
+                    více energie, lepší nálady a pozitivních změn ve zdraví
+                    během 8–12 týdnů, když začnou s postupnými a proveditelnými
+                    změnami životního stylu. Zaměřuji se na vytváření
+                    dlouhodobých návyků, aby výsledky zůstaly trvalé.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
-                <summary class="faq-q-box">Do you accept insurance?</summary>
+                <summary class="faq-q-box">Přijímáte pojištění?</summary>
                 <div class="faq-a-box">
                   <p>
-                    Not at this time, but I offer virtual services that make
-                    getting expert nutrition and lifestyle support convenient
-                    and accessible.
+                    V tuto chvíli ne, ale nabízím virtuální služby, které
+                    zajišťují dostupnou a pohodlnou odbornou podporu v oblasti
+                    výživy a životního stylu.
                   </p>
                 </div>
               </details>
               <details class="faq-box">
                 <summary class="faq-q-box">
-                  What should I expect during my first visit?
+                  Co mohu čekat při první konzultaci?
                 </summary>
                 <div class="faq-a-box">
                   <p>
-                    Your first session is an open, exploratory conversation
-                    where we get to know each other, discuss your goals,
-                    challenges, and what you want to achieve. This sets the
-                    foundation for a supportive, personalized partnership
-                    focused on making meaningful and sustainable changes that
-                    fit your busy life.
+                    První setkání je otevřený a přátelský rozhovor, během
+                    kterého se poznáme, probereme vaše cíle, výzvy a představy.
+                    Na tomto základě společně nastavíme osobní plán a podporu,
+                    která vám pomůže provést smysluplné a udržitelné změny
+                    přizpůsobené vašemu životu.
                   </p>
+                </div>
+              </details>
+              <details class="faq-box">
+                <summary class="faq-q-box">
+                  Jsem si na 100 % jistý/á, že s vámi chci spolupracovat. Jaký
+                  je můj další krok?
+                </summary>
+                <div class="faq-a-box">
+                  <p>
+                    Prosím, vyplňte Dotazník: První krok k naší spolupráci. Poté
+                    si domluvíme 20minutový hovor, abychom se ujistili, že jsme
+                    pro sebe ta nejlepší volba.
+                  </p>
+                  <a href="../res/doc/questionnaire.pdf">
+                    První krok k naší spolupráci
+                  </a>
                 </div>
               </details>
               <div class="faq-no-match">
-                <p>Didn’t find the answer you were looking for?</p>
+                <p>Nenašli jste odpověď na svou otázku?</p>
                 <p>
-                  Please don’t hesitate to reach out! There’s no such thing as a
-                  silly question. I’m always happy to help you get the clarity
-                  and support you need.
+                  Neváhejte mě kontaktovat! Neexistují žádné „hloupé“ otázky.
+                  Ráda vám pomůžu získat jasnost i podporu, kterou potřebujete.
                 </p>
               </div>
               <div class="ask-me-container">
-                <a href="#contacts" class="ask-me-text faq-lang">Reach out</a>
+                <a href="#contacts" class="ask-me-text faq-lang">Ozvat se</a>
               </div>
             </div>
           </div>
@@ -896,7 +975,7 @@
         <section id="testimonial">
           <div class="section-content">
             <div class="testimonial-title section-title">
-              <h2>Testimonials</h2>
+              <h2>Reference</h2>
             </div>
             <div class="testimonial-container section-container">
               <div class="testimonial-show-container">
@@ -913,21 +992,21 @@
                     <div class="testimonial-text">
                       <p>
                         <i>
-                          "When I first started working with Petra, I was
-                          constantly exhausted, my labs were off, and I felt
-                          stuck. I knew I needed a change, and she guided me
-                          with a personalized, supportive approach that actually
-                          made sense for my life.
+                          "Když jsem začala spolupracovat s Petrou, byla jsem
+                          neustále vyčerpaná, laboratorní výsledky nebyly v
+                          pořádku a měla jsem pocit, že se nikam nehnu. Věděla
+                          jsem, že potřebuju změnu, a ona mě vedla osobním a
+                          podpůrným způsobem, který dával smysl mému životu.
                         </i>
                       </p>
                       <p>
                         <i>
-                          Today, my lab results are back in the healthy range,
-                          and I have energy I haven't felt in years. I'm more
-                          active, my meals are satisfying and enjoyable, and for
-                          the first time in a long time, I feel like I'm truly
-                          taking care of myself. I didn’t think progress could
-                          feel this natural — but it really does."
+                          Dnes jsou mé výsledky zpátky ve zdravých hodnotách a
+                          mám energii, jakou jsem necítila roky. Jsem
+                          aktivnější, jídla mě těší a chutnají mi, a poprvé po
+                          dlouhé době mám pocit, že se o sebe skutečně starám.
+                          Nemyslela jsem si, že pokroky mohou působit tak
+                          přirozeně ale opravdu to tak je."
                         </i>
                       </p>
                     </div>
@@ -943,19 +1022,19 @@
                     <div class="testimonial-text">
                       <p>
                         <i>
-                          "Honestly? I feel like a new person. I’ve got energy,
-                          I’m fitting into old clothes, and I don’t dread
-                          looking in the mirror anymore. My friends keep asking
-                          what I’m doing, and my family’s even started making
-                          changes — just from watching me.
+                          "Upřímně? Připadám si jako nový člověk. Mám energii,
+                          vejdu se zpátky do starých šatů a už se neděsím
+                          pohledu do zrcadla. Kamarádi se mě neustále ptají, co
+                          dělám jinak, a dokonce i moje rodina začala dělat
+                          změny jen tím, že mě pozorují.
                         </i>
                       </p>
                       <p>
                         <i>
-                          Working with Ms.Dahnalova wasn’t about some strict
-                          diet or crazy rules. She helped me figure out what
-                          actually works for me — and now I actually enjoy it. I
-                          feel good, I look better, and I’m not giving that up."
+                          Spolupráce s paní Dahnalovou nebyla o přísné dietě ani
+                          nesmyslných pravidlech. Pomohla mi zjistit, co funguje
+                          právě pro mě a teď mě to dokonce baví. Cítím se dobře,
+                          vypadám lépe a rozhodně se toho nevzdám."
                         </i>
                       </p>
                     </div>
@@ -971,33 +1050,33 @@
                     <div class="testimonial-text">
                       <p>
                         <i>
-                          "At first, I wasn’t sure about the virtual format. I’m
-                          not the most tech-savvy person, and I thought I’d miss
-                          the in-person connection. But honestly, once I got the
-                          hang of it, I realized how much easier and more
-                          convenient it actually is — no driving, no parking,
-                          and I can join from my kitchen with a cup of tea.
+                          "Nejdřív jsem si nebyla jistá virtuálním formátem.
+                          Nejsem moc technický typ a myslela jsem, že mi bude
+                          chybět osobní kontakt. Ale upřímně jakmile jsem si na
+                          to zvykla, uvědomila jsem si, o kolik je to jednodušší
+                          a pohodlnější žádné dojíždění, žádné parkování a můžu
+                          se připojit přímo z kuchyně s šálkem čaje.
                         </i>
                       </p>
                       <p>
                         <i>
-                          I also didn’t expect to enjoy the group classes as
-                          much as I did. It felt good to meet other people going
-                          through the same things — trying to eat better, feel
-                          better, and make sense of all the health information
-                          out there. I even found myself looking forward to it
-                          each week.
+                          Nečekala jsem ani, že si skupinové lekce tolik
+                          oblíbím. Bylo příjemné setkat se s lidmi, kteří řeší
+                          stejné veci, snaží se jíst lépe, cítit se lépe a
+                          vyznat se v záplavě informací o zdraví. Dokonce jsem
+                          se na ně každý týden těšila.
                         </i>
                       </p>
                       <p>
                         <i>
-                          The recipes were a real treat — simple, tasty, and
-                          full of ingredients I never would’ve thought to try.
-                          And even though I thought I was doing “pretty well”
-                          before, I’ve learned so much. Ms. Dohnlova opened my
-                          eyes to how much more I could do to support my health,
-                          and in a way that still feels doable and enjoyable.
-                          I’m grateful I gave it a chance."
+                          Recepty byly opravdovým překvapením, jednoduché,
+                          chutné a plné surovin, které by mě nikdy nenapadlo
+                          vyzkoušet. A i když jsem si myslela, že jím „docela
+                          dobře“, naučila jsem se toho strašně moc. Paní
+                          Dohnlová mi otevřela oči, kolik toho ještě můžu udělat
+                          pro své zdraví a to způsobem, který je stále
+                          proveditelný a příjemný. Jsem vděčná, že jsem tomu
+                          dala šanci."
                         </i>
                       </p>
                     </div>
@@ -1013,20 +1092,20 @@
                     <div class="testimonial-text">
                       <p>
                         <i>
-                          "I wasn’t able to stay in the program as long as I
-                          wanted because of work, but even with my limited time,
-                          I lost weight and started feeling so much better.
-                          Dietitian Petra helped me create small changes that
-                          actually worked and I can keep doing in my day to day.
+                          "Nemohl jsem v programu zůstat tak dlouho, jak bych si
+                          přál, kvůli práci, ale i za ten omezený čas jsem zhubl
+                          a začal se cítit mnohem lépe. Nutriční terapeutka
+                          Petra mi pomohla vytvořit malé změny, které skutečně
+                          fungují a které zvládám udržovat každý den.
                         </i>
                       </p>
                       <p>
                         <i>
-                          What I love is that this isn’t all-or-nothing. I made
-                          real progress, and I know I’ll be back when my
-                          schedule opens up again. There’s much more I want to
-                          learn and I want to continue improving my life and
-                          health.”
+                          Na tom, co se mi líbí, je, že to není všechno, nebo
+                          nic. Udělal jsem reálný pokrok a vím, že se vrátím,
+                          jakmile se mi uvolní čas. Je toho ještě hodně, co se
+                          chci naučit, a chci dál zlepšovat svůj život i
+                          zdraví.”
                         </i>
                       </p>
                     </div>
@@ -1035,11 +1114,42 @@
                     </div>
                   </div>
                 </div>
+                <div
+                  class="testimonial-show-box testimonial-show-box-right-side"
+                >
+                  <div class="testimonial-box">
+                    <div class="testimonial-text">
+                      <p>
+                        <i>
+                          "Nejdřív jsem si myslel, že to bude o přísným
+                          veganství a že budu muset všechno změnit. Já občas
+                          maso jím, ale s tím vůbec problém nebyl. Pani
+                          Dohnalová mi pomohla najít, jak jíst líp, aniž bych si
+                          musel všechno hned úplně obrátit vzhůru nohama. Sice
+                          jsme pokryli i cvičení, ale když jsem jí řekl, že chci
+                          ve fitku začít makat víc, doporučila mi, ať si najdu
+                          trenéra, který mi s tím opravdu pomůže.
+                        </i>
+                      </p>
+                      <p>
+                        <i>
+                          Teď jím víc rostlině, necítím se tak vyčerpaný a mám
+                          víc energie a síly na tréninky. Nepřijde mi to jako
+                          žádná dieta, spíš jako normální věci, co fakt
+                          fungujou.”
+                        </i>
+                      </p>
+                    </div>
+                    <div class="testimonial-author">
+                      <h3>— <i>Jan</i>, 27, Praha</h3>
+                    </div>
+                  </div>
+                </div>
                 <button id="arrow-right" class="arrow-button">
                   <img
                     class="testimonial-svg"
                     src="../res/img/svg/chevron-right.svg"
-                    alt="arrow pointing to right"
+                    alt="sipka smerujici doprava"
                   >
                 </button>
               </div>
@@ -1048,40 +1158,89 @@
                 <div class="testimonial-show-button"></div>
                 <div class="testimonial-show-button"></div>
                 <div class="testimonial-show-button"></div>
+                <div class="testimonial-show-button"></div>
               </div>
             </div>
           </div>
         </section>
-        <section id="recipes">
+        <section id="freeres">
           <div class="section-content">
-            <div class="recipes-title section-title">
-              <h2>Recipes</h2>
+            <div class="freeres-title section-title">
+              <h2>Užitečné zdroje zdarma</h2>
             </div>
-            <div class="recipes-container section-container">
-              <div class="recipes-box">
-                <h3>Title of Document 1</h3>
-                <p>Small description</p>
-                <a href="#">File to download</a>
+            <div class="freeres-container section-container">
+              <div class="freeres-box">
+                <h3>7 denní výzva pro více energie</h3>
+                <p class="freeres-text">
+                  Týden pro nový začátek: malé změny, velké výsledky. Praktická
+                  výzva, která vám ukáže, jak jednoduché návyky mohou během
+                  jednoho týdne nastartovat vaši energii i pohodu.
+                </p>
+                <div class="freeres-files">
+                  <a
+                    target="_blank"
+                    href="../res/doc/7_denni_vyzva_pro_vice_energie.pdf"
+                  >
+                    Přečíst
+                  </a>
+                </div>
               </div>
-              <div class="recipes-box">
-                <h3>Title of Document 2</h3>
-                <p>Small description</p>
-                <a href="#">File to download</a>
+              <div class="freeres-box">
+                <h3>Vyvážená rostlinná strava</h3>
+                <p class="freeres-text">
+                  Jak si bez stresu poskládat talíř, který vyživí i zasytí.
+                  Jednoduchý průvodce, který vám pomůže najít jistotu v
+                  rostlinné stravě – bez složitostí a s chutí.
+                </p>
+                <div class="freeres-files">
+                  <a
+                    target="_blank"
+                    href="../res/doc/vyvazena_rostlinna_strava.pdf"
+                  >
+                    Přečíst
+                  </a>
+                </div>
               </div>
-              <div class="recipes-box">
-                <h3>Title of Document 3</h3>
-                <p>Small description</p>
-                <a href="#">File to download</a>
+              <div class="freeres-box">
+                <h3>Vyrovnávání hladiny cukru v krvi</h3>
+                <p class="freeres-text">
+                  Proč energie létá nahoru a dolů – a jak to změnit. Zjistěte,
+                  jak vám rostlinné stravování může pomoci pochopit a udržet
+                  stabilní hladinu energie po celý den.
+                </p>
+                <div class="freeres-files">
+                  <a
+                    target="_blank"
+                    href="../res/doc/vyrovnavani_hladiny_cukru_v_krvi.pdf"
+                    >Přečíst</a
+                  >
+                </div>
               </div>
-              <div class="recipes-box">
-                <h3>Title of Document 4</h3>
-                <p>Small description</p>
-                <a href="#">File to download</a>
+              <div class="freeres-box">
+                <h3>Zdraví střev</h3>
+                <p class="freeres-text">
+                  Síla střevní mikroflóry pro vaši energii a pohodu. Objevte,
+                  jak jednoduché kroky v rostlinné stravě podpoří zdraví vašich
+                  střev a pozitivně ovlivní celé tělo.
+                </p>
+                <div class="freeres-files">
+                  <a target="_blank" href="../res/doc/zdravi_strev.pdf"
+                    >Přečíst</a
+                  >
+                </div>
               </div>
-              <div class="recipes-box">
-                <h3>Title of Document 5</h3>
-                <p>Small description</p>
-                <a href="#">File to download</a>
+              <div class="freeres-box">
+                <h3>Stravování bez masa</h3>
+                <p class="freeres-text">
+                  Flexitarián, vegetarián, vegan… vyznáte se? Tento přehled vám
+                  ukáže hlavní rozdíly a pomůže najít styl stravování, který
+                  bude nejlépe sedět právě vám.
+                </p>
+                <div class="freeres-files">
+                  <a target="_blank" href="../res/doc/stravovani_bez_masa.pdf"
+                    >Přečíst</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -1089,55 +1248,74 @@
       </div>
       <footer id="contacts">
         <div class="footer-container">
-          <div class="footer-box">
-            <h2>Contacts</h2>
-            <p><span>Phone: </span>X</p>
-            <p><span>Email: </span>X</p>
-          </div>
-          <div class="footer-box">
-            <h2>Email us</h2>
-            <form
-              class="input-field-container"
-              action="https://formspree.io/f/"
-              method="POST"
-            >
-              <div class="input-field-box">
-                <label for="name"> Name: </label>
-                <input
-                  class="input-field"
-                  autocomplete="off"
-                  id="name"
-                  placeholder="Your name.."
-                  type="text"
-                  name="name"
-                  required
+          <div class="contacts-container">
+            <div class="footer-box footer-box-1">
+              <h2>Kontakty</h2>
+              <div class="contacts-box">
+                <img src="../res/img/svg/phone.svg" alt="icon of phone" >
+                <p>
+                  Telefon: <span><a href="#">X</a></span>
+                </p>
+              </div>
+              <div class="contacts-box">
+                <img src="../res/img/svg/mail.svg" alt="icon of letter" >
+                <p>Email: <span id="contact-email"></span></p>
+              </div>
+            </div>
+            <div class="footer-box footer-box-2">
+              <div class="footer-logo">
+                <img
+                  class="footer-logo"
+                  src="../res/img/logo/logo_c_p_btw.webp"
+                  alt="logo of thenutronia"
                 >
               </div>
-              <div class="input-field-box">
-                <label for="email"> Email: </label>
-                <input
-                  class="input-field"
-                  autocomplete="off"
-                  id="email"
-                  placeholder="Your email.."
-                  type="email"
-                  name="email"
-                  required
-                >
-              </div>
-              <div class="input-field-box">
-                <label for="message">Message: </label>
-                <textarea
-                  class="input-field"
-                  id="message"
-                  placeholder="Your message.."
-                  name="message"
-                ></textarea>
-              </div>
-              <div class="input-field-box">
-                <button id="submit" type="submit">Submit</button>
-              </div>
-            </form>
+            </div>
+            <div class="footer-box footer-box-3">
+              <h2>Napište nám e-mail</h2>
+              <form
+                class="input-field-container"
+                action="https://formspree.io/f/mnnzeeez"
+                method="POST"
+              >
+                <div class="input-field-box">
+                  <label for="name">Jméno: </label>
+                  <input
+                    class="input-field"
+                    autocomplete="off"
+                    id="name"
+                    placeholder="Vaše jméno.."
+                    type="text"
+                    name="name"
+                    required
+                  >
+                </div>
+                <div class="input-field-box">
+                  <label for="email">Email: </label>
+                  <input
+                    class="input-field"
+                    autocomplete="off"
+                    id="email"
+                    placeholder="Váš email.."
+                    type="email"
+                    name="email"
+                    required
+                  >
+                </div>
+                <div class="input-field-box">
+                  <label for="message">Zpráva: </label>
+                  <textarea
+                    class="input-field"
+                    id="message"
+                    placeholder="Vaše zpráva.."
+                    name="message"
+                  ></textarea>
+                </div>
+                <div class="input-field-box">
+                  <button id="submit" type="submit">Odeslat</button>
+                </div>
+              </form>
+            </div>
           </div>
           <div class="connect-container section-container">
             <a
@@ -1148,7 +1326,7 @@
                 <h3>Instagram</h3>
                 <img
                   class="connect-box-img"
-                  src="../res/img/contacts/instagramc.png"
+                  src="../res/img/contacts/ic.webp"
                   alt="logo of instagram"
                 >
               </div>
@@ -1161,8 +1339,8 @@
                 <h3>TikTok</h3>
                 <img
                   class="connect-box-img"
-                  src="../res/img/contacts/tiktokc.png"
-                  alt="logo of facebook"
+                  src="../res/img/contacts/tc.webp"
+                  alt="logo of tiktok"
                 >
               </div>
             </a>
@@ -1174,18 +1352,18 @@
                 <h3>Facebook</h3>
                 <img
                   class="connect-box-img"
-                  src="../res/img/contacts/facebookc.png"
+                  src="../res/img/contacts/fbc.webp"
                   alt="logo of facebook"
                 >
               </div>
             </a>
-            <a target="_blank" href="https://twitter.com/TheNutronia">
+            <a target="_blank" href="https://x.com/TheNutronia">
               <div class="connect-box">
-                <h3>Twitter</h3>
+                <h3>X</h3>
                 <img
                   class="connect-box-img"
-                  src="../res/img/contacts/twitterc.png"
-                  alt="logo of twitter"
+                  src="../res/img/contacts/xc.webp"
+                  alt="logo of x"
                 >
               </div>
             </a>
@@ -1193,12 +1371,12 @@
         </div>
         <div id="copyright">
           <p>© 2025 TheNutronia</p>
-          <!--<p>
-            Made by:
+          <p>
+            Vytvořil
             <a target="_blank" href="https://github.com/Akino02"
               >Michal Adamek</a
             >
-          </p>-->
+          </p>
         </div>
       </footer>
     </div>
