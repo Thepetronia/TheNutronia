@@ -7,17 +7,23 @@ let cont = document.getElementsByClassName("faq-a-box");*/
 let changephotosloop = setInterval(changephotos, 5000);
 let photoIndex = 0;
 
-const testimonialBoxes = document.getElementsByClassName("testimonial-show-box");
+const testimonialBoxes = document.getElementsByClassName(
+  "testimonial-show-box",
+);
 let testimonialIndex = 0;
 
 let leftArrow = document.getElementById("arrow-left");
 let rightArrow = document.getElementById("arrow-right");
 let navTestimonialsButtons = document.getElementsByClassName(
-  "testimonial-show-button"
+  "testimonial-show-button",
 );
 
 const openerMenu = document.getElementById("nav-opener");
 const smallMenu = document.getElementById("nav-container-compact");
+//TEMP
+const boxOfSmallMenu = document.getElementsByClassName("nav-box-compact");
+
+const Copyright = document.getElementById("footer-copyright");
 
 const langContainer = document.getElementById("lang-container");
 const langOpener = document.getElementById("lang-box-opener");
@@ -25,123 +31,12 @@ const langSwapper = document.getElementById("lang-box");
 let isLangMenuOpen = false;
 
 const user = "thenutronia";
-const subjectEN = "Excited to Start My Journey with You"
-const subjectCZ = "Jsem připraven/a začít svou cestu s vám"
+const subjectEN = "Excited to Start My Journey with You";
+const subjectCZ = "Jsem připraven/a začít svou cestu s vám";
 const domain = "gmail.com";
 const email = user + "@" + domain;
 const emailLink = `<a href="mailto:${email}">${email}</a>`;
 document.getElementById("contact-email").innerHTML = emailLink;
-
-/*let textFields = document.getElementsByClassName("lang")
-const data = await fetch("./res/data/lang.json");
-const lang = await data.json(data);*/
-
-/*Lang*/
-/*let translations = null;
-let supportedLangs = ["en", "cs"];
-const langButton = document.getElementsByClassName("lang-button");
-
-const navText = document.getElementsByClassName("nav-lang");
-
-const aboutText = document.getElementsByClassName("about-lang");
-
-const offerText = document.getElementsByClassName("offer-lang");
-
-const faqTextQ = document.getElementsByClassName("faq-lang-q");
-const faqTextA = document.getElementsByClassName("faq-lang-a");
-const faqText = document.getElementsByClassName("faq-lang");
-
-const testimonialText = document.getElementsByClassName("testimonial-lang");
-const testimonailBoxText = document.getElementsByClassName("testimonial-lang-text");
-
-const contactsTitle = document.getElementsByClassName("footer-lang-title")
-const contactsCont = document.getElementsByClassName("footer-lang-contacts")
-const contactsForm = document.getElementsByClassName("footer-lang-form")
-const contactsPlace = document.getElementsByClassName("footer-lang-placeholder")*/
-
-/*const textToChange = document.querySelectorAll(".nav-lang");*/
-
-/*async function loadLangData() {
-  const res = await fetch("./res/data/lang.json");
-  const data = await res.json();
-  translations = data;
-
-  detectLang()
-}
-
-function switchLang(lang) {
-  document.documentElement.lang = lang;
-  for (let i = 0; i < translations[lang].nav.length; i++) {
-    navText[i].innerHTML = translations[lang].nav[i];
-    navText[i + translations[lang].nav.length].innerHTML =
-      translations[lang].nav[i];
-  }
-
-  aboutText[0].innerHTML = translations[lang].about.title;
-  for (let i = 0; i < translations[lang].about.text.length; i++) {
-    aboutText[i + 1].innerHTML = translations[lang].about.text[i];
-  }
-
-  offerText[0].innerHTML = translations[lang].offer.title;
-  for (let i = 0; i < translations[lang].offer.text.length; i++) {
-    offerText[i + 1].innerHTML = translations[lang].offer.text[i];
-  }
-
-  faqText[0].innerHTML = translations[lang].faq.title;
-  for (let i = 0; i < translations[lang].faq.text.length; i++) {
-    faqText[i + 1].innerHTML = translations[lang].faq.text[i];
-  }
-  for (let i = 0; i < translations[lang].faq.faqq.length; i++) {
-    faqTextQ[i].innerHTML = translations[lang].faq.faqq[i];
-  }
-  for (let i = 0; i < translations[lang].faq.faqa.length; i++) {
-    faqTextA[i].innerHTML = translations[lang].faq.faqa[i];
-  }
-
-  testimonialText[0].innerHTML = translations[lang].testimonials.title;
-  for (let i = 0; i < translations[lang].testimonials.text.length; i++) {
-    testimonailBoxText[i].innerHTML = translations[lang].testimonials.text[i];
-  }
-
-  for (let i = 0; i < translations[lang].contacts.title.length; i++) {
-    contactsTitle[i].innerHTML = translations[lang].contacts.title[i];
-  }
-  for (let i = 0; i < translations[lang].contacts.contacts.length; i++) {
-    contactsCont[i].innerHTML = translations[lang].contacts.contacts[i];
-  }
-  for (let i = 0; i < translations[lang].contacts.form.length; i++) {
-    contactsForm[i].innerHTML = translations[lang].contacts.form[i];
-  }
-  for (let i = 0; i < translations[lang].contacts.placeholder.length; i++) {
-    contactsPlace[i].placeholder = translations[lang].contacts.placeholder[i];
-  }
-}
-
-function detectLang() {
-  const userLang = navigator.language || navigator.userLanguage;
-  let detected = userLang.split("-")[0];
-  for (let i = 0; i < supportedLangs.length; i++) {
-    if (detected == supportedLangs[i]) {
-      langButton[i].classList.add("active");
-      switchLang(detected);
-      return;
-    }
-  }
-  langButton[0].classList.add("active");
-  switchLang("en");
-}
-
-for (let indexClick = 0; indexClick < langButton.length; indexClick++){
-  langButton[indexClick].addEventListener("click", () => {
-    for (let index = 0; index < langButton.length; index++){
-      langButton[index].classList.remove("active");
-    }
-    langButton[indexClick].classList.add("active");
-    switchLang(langButton[indexClick].value)
-  })
-}*/
-
-/**/
 
 /*Lang switch*/
 
@@ -223,24 +118,24 @@ function showBox(newIndex) {
 
   testimonialBoxes[testimonialIndex].classList.add("active"); /*box active*/
   navTestimonialsButtons[testimonialIndex].classList.add(
-    "active"
+    "active",
   ); /*nav button active*/
   testimonialBoxes[testimonialIndex].classList.remove(
-    "testimonial-show-box-left-side"
+    "testimonial-show-box-left-side",
   );
   testimonialBoxes[testimonialIndex].classList.remove(
-    "testimonial-show-box-right-side"
+    "testimonial-show-box-right-side",
   );
 
   for (let index = 0; index < testimonialBoxes.length; index++) {
     if (testimonialIndex > index) {
       testimonialBoxes[index].classList.remove(
-        "testimonial-show-box-right-side"
+        "testimonial-show-box-right-side",
       );
       testimonialBoxes[index].classList.add("testimonial-show-box-left-side");
     } else if (testimonialIndex < index) {
       testimonialBoxes[index].classList.remove(
-        "testimonial-show-box-left-side"
+        "testimonial-show-box-left-side",
       );
       testimonialBoxes[index].classList.add("testimonial-show-box-right-side");
     }
@@ -275,9 +170,10 @@ rightArrow.addEventListener("click", () => {
 });
 /**/
 
-/*Responsive menu smaller*/
+/*Responsive menu smaller*/ //TEMP
 let isOpened = false;
-openerMenu.addEventListener("click", () => {
+
+function closeSmallMenu() {
   if (isOpened === true) {
     /*smallMenu.style.display = "none"*/
     smallMenu.style.top = "-1500px";
@@ -289,7 +185,18 @@ openerMenu.addEventListener("click", () => {
   }
   openerMenu.classList.toggle("change");
   isOpened = !isOpened;
-});
+}
+
+openerMenu.addEventListener("click", closeSmallMenu);
+
+for(let index = 0; index < boxOfSmallMenu.length; index++){
+  boxOfSmallMenu[index].addEventListener("click", closeSmallMenu);
+}
+
+/*Copyright year*/
+let currYear = new Date();
+let copyrightText = "© 2025-" + currYear.getFullYear() + " TheNutronia";
+Copyright.innerText = copyrightText;
 
 /*Language changer*/
 
